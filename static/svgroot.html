@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>铺位图</title>
+    <!-- <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon"> -->
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../src/common/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../static/dist/css/animate.css"> -->
+    <!--第三方js-->
+    <!--common css-->
+    <link rel="stylesheet" href="../src/common/css/common.css">
+    <!-- <link rel="stylesheet" href="../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../static/css/common/icons.css">
+    <link rel="stylesheet" href="../static/css/common/static_table.css"> -->
+    <!-- <link rel="stylesheet" href="../../static/css/views/op_managment/sale_rank_all.css"> -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+    <!-- <link href="./static/css/project.css" rel="stylesheet"> -->
+    <link href="../src/common/css/svgroot.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./static/css/svgedit.css"> -->
+    <div id="preloader" style="display:none;">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+    <div id="ys-floor-ichnography" class="ys-page">
+        <!-- 主面板 -->
+        <!-- <input id="mallType" type="hidden" value="$!{mallType}">
+        <!-- <div class="ys-content-panel clearfix"> -->
+        <!-- <div class="ys-content-header clearfix">
+            <ol class="breadcrumb">
+                <li class="ys-breadcrumb-outstanding-none"><a href="">首页</a></li>
+                <li class="bread-nav"><a href="">资料维护</a></li>
+                <li class="bread-nav"><a href="">商铺信息</a></li>
+                <li class="bread-nav"><a href="javascript:window.location.reload()">铺位图</a></li>
+            </ol>
+            <div class="pull-right ys-floor-ichnography-summary">
+                <span class="ys-font-size-24"><em id="data-store-num" class="ys-font-color-red">-</em>个铺位</span>
+                <span class="ys-font-size-24"><em id="data-brand-num" class="ys-font-color-red">-</em>个商户</span>
+                <span class="ys-font-size-24">开业率<em id="data-open-rate" class="ys-font-color-red">-%</em></span>
+            </div>
+        </div> -->
+        <div class="ys-toolbar clearfix">
+            <!-- <div class="pull-right" style="margin-right: 50px; display: inline-flex;">
+                    <div class="btn-ys-mall-select btn btn-default">
+                        <span name="mallName">$!{mallName}</span>
+                        <input type="hidden" id="mallId" value="$!{mallId}">
+                    </div>
+                    <div class="dropdown ys-dropdown-menu ys-dropdown btn-group" style="padding-left: 5px;">
+                        <div class="btn btn-default dropdown-toggle ys-dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span>21层</span>
+                            <em class="more-info"></em>
+                        </div>
+                        <ul class="dropdown-menu" style="max-height: 260px;overflow: auto">
+                            <li>
+                                <a href="javascript:void(0)" onclick="changeFloor(this);" key="11">21层</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="changeFloor(this);" key="22">22层</a>
+                            </li>
+                        </ul>
+                        <input type="hidden" id="floorId" value="">
+                        <input type="hidden" id="svgPath" value="">
+                    </div>
+                </div> -->
+            <div class="ys-dropdown-group pull-left">
+                <!-- <div class="btn-group ys-dropdown pull-left" id="project_select_btn">
+                    <button type="button" class="btn btn-default dropdown-toggle ys-dropdown-btn" data-toggle="dropdown" aria-expanded="false">
+                        王岩项目
+                    </button>
+                    <div class="dropdown-menu" style="width:400px;">
+                        <div class="ys-search-wrapper">
+                            <div class="ys-search">
+                                <input class="form-control" placeholder="项目">
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div> -->
+                <div class="dropdown ys-dropdown ys-dropdown-project-select pull-left">
+                    <button class="btn btn-default ys-btn ys-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        选择项目
+                    </button>
+                    <div class="dropdown-menu clearfix"  style="width:420px;">
+                        <div class="ys-search-wrapper">
+                            <div class="ys-search ys-search-reverse">
+                                <input type="text" class="form-control js-project-search" placeholder="">
+                            </div>
+                        </div>
+                       <div class="ys-search-list-wrapper clearfix">
+                            <div class="col-xs-5">
+                                <ul class="js-city-list">
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="ys-ul-title">
+                                    <span>在营项目</span>
+                                </div>
+                                <ul class="js-project-list">
+
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div><!--ys-dropdown-project-select-->
+                <div class="btn-group ys-dropdown pull-left" id="">
+                    <button type="button" class="btn btn-default dropdown-toggle ys-dropdown-btn" data-toggle="dropdown" aria-expanded="false">
+                        <span>M1层</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)" onclick="changeFloor(this);" key="11">M1层</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeFloor(this);" key="22">M2层</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeFloor(this);" key="33">M3层</a></li>
+                    </ul>
+                    <input type="hidden" id="floorId" value="">
+                    <input type="hidden" id="svgPath" value="">
+                </div>
+            </div>
+            <div class="pull-left ys-button-group">
+                <div data="1" class="tab active">当前业态</div>
+                <div data="2" class="tab">签批业态</div>
+                <div data="3" class="tab">业态对比</div>
+                <div data="4" class="tab">平均租金</div>
+                <div data="5" class="tab">坪效</div>
+            </div>
+        </div>
+        <div class="ys-content clearfix" style="padding:0;margin:0 20px;border:1px solid #ccc;">
+            <!-- <div style="border:1px solid #ccc" class="clearfix"> -->
+            <div class="pull-left ys-content-left" style="width:60%;">
+                <div class="ys-graphy  ys-mainpanel-inner">
+                    <!-- <svg version="1.1" viewBox="0 0 800 500" id="ys-svg" src="$!{base_Path}svgEditorStatic/平面图示例.svg" xmlns="http://www.w3.org/2000/svg" style="width: 100%;height: 500px;" preserveAspectRetio="xMidYMid meet"> -->
+
+                        <svg version="1.1" viewBox="0 0 800 500" id="ys-svg" src="./平面图示例.svg" xmlns="http://www.w3.org/2000/svg" style="width: 100%;height: 500px;" preserveAspectRetio="xMidYMid meet">                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 500" style="enable-background:new 0 0 800 500;" xml:space="preserve">
+                            <style type="text/css">
+                            .st0 {
+                                fill: #FFFFFF;
+                                stroke: #333333;
+                                stroke-width: 0.5;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st1 {
+                                fill: none;
+                                stroke: #333333;
+                                stroke-width: 0.5;
+                                stroke-miterlimit: 10;
+                            }
+                            </style>
+                            <g>
+                                <rect x="169" y="115.8" class="st0" width="23.5" height="73.2" />
+                                <polygon class="st0" points="169,219.3 227.8,219.3 227.8,199.5 192.5,199.5 192.5,189 169,189    " />
+                                <polygon class="st0" points="247.7,102.7 247.7,123.3 193.3,123.3 193.3,115.8 213.2,115.8 213.2,102.7    " />
+                                <polygon class="st0" points="226.5,124 247.7,124 247.7,152.4 225.7,152.4 225.7,128.8 226.5,128.8    " />
+                                <polygon class="st0" points="271,155.3 318,155.3 321.3,158.7 307.3,169.8 271,169.8  " />
+                                <polygon class="st0" points="255.7,272.2 265.2,272.2 265.2,268.8 272.8,268.8 272.8,326.7 254.5,354 237.3,354 237.3,351.7 
+                                            166.7,351.7 166.7,303.5 200.7,303.5 200.7,325 213.3,325 213.3,329 222,329 222,325.7 255,325.7   " />
+                                <polygon class="st0" points="506.3,88.3 553.7,88.3 553.7,83.7 634.3,83.7 634.3,111.7 615,111.7 615,104 525.3,104 525.3,135 
+                                            529.3,135 529.3,226.7 524,226.7 524,260 608.3,260 608.3,280.7 506.3,280.7   " />
+                                <rect x="575" y="136.3" class="st0" width="33" height="19.7" />
+                                <rect x="575" y="208.7" class="st1" width="33" height="18" />
+                                <polygon class="st1" points="166.7,72.3 166.7,358.3 296.2,358.3 296.2,415 636.1,415 636.1,72.3  " />
+                            </g>
+                        </svg>
+                    </svg>
+                </div>
+                <div class="legend-panel-wrapper clearfix" style="padding:0px 0px;background-color:#F8FAFA;">
+                    <ul id="legend-panel">
+                    </ul>
+                </div>
+                <div class="scale_btn_group">
+                    <div class="big_scale_btn">+</div>
+                    <div class="small_scale_btn">-</div>
+                </div>
+            </div>
+            <!-- ys-content-left -->
+            <div class="pull-left ys-content-right ys-content-info" style="width:40%;">
+            </div>
+            <!-- ys-content-right -->
+            <!-- </div> -->
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- <script type="text/x-jquery-tmpl" id="ys-store-info">
+    <div class="ys-store-info model-info">
+        <div>
+            <em class="ys-icon ys-icon-location"></em>
+            <span class="storeNo ys-font-size-18">{{= bsStore.storeNo}}</span>
+            <span class="ys-font-size-18">商铺信息</span>
+        </div>
+
+        <ul class="ys-store-info-basic clearfix">
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">签批业态</div>
+                <div>{{= bsStore.issuingLayoutName}}</div>
+            </li>
+
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">当前业态</div>
+                <div>{{= bsCont.layoutName}}</div>
+            </li>
+
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">商铺定位</div>
+                <div>{{= bsStore.storePositionName}}</div>
+            </li>
+
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">商户名</div>
+                <div>{{= bsCont.brandName}}</div>
+            </li>
+
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">面积
+                    <div class="glyphicon glyphicon-info-sign" style="color:#ccc;" >
+                        <div class="ys-tooltip">
+                            <div>占用铺位总面积{{= bsCont.rentSquare}}m²</div>
+                            <div style="height:10px;"></div>
+                            {{each(i,temp) bsContStoreList}}
+                                <div>${temp.storeNo}：${temp.rentSquare}m²</div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                 <div>{{= bsStore.rentSquare}}m²</div>
+            </li>
+
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">租期</div>
+                <div>{{= bsCont.rentYears}}</div>
+            </li>
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">单价（标准）</div>
+                <div>
+                    {{if bsStore.bsStoreRentinfoList[0] && bsStore.bsStoreRentinfoList[0].rentPrice}}
+                        {{= bsStore.bsStoreRentinfoList[0].rentPrice}}元/m²/月
+                    {{/if}}
+                </div>
+            </li>
+            #*<li>
+                <div class="ys-font-size-12 ys-font-color-75">总额</div>
+                <div>{{= bsContract.totalPrice}}元</div>
+            </li>*#
+            <li>
+                <div class="ys-font-size-12 ys-font-color-75">欠费总额</div>
+                <div>{{= allArrearage}}元</div>
+            </li>
+        </ul>
+
+        <div class="ys-store-info-statement">
+                <div><span class="ys-font-color-75">商铺租赁合同</span><a class="ys-font-color-blue" onClick="openContractDetail('{{= bsContract.contractNo}}')">{{= bsContract.contractNo}}</a></div>
+                <div><span class="ys-font-color-75">经营管理合同</span><a class="ys-font-color-blue" onClick="openContractDetail('{{= netBusiCond.manageContractNo}}')">{{= netBusiCond.manageContractNo}}</a></div>
+                <div><span class="ys-font-color-75">商务审批表</span><a class="ys-font-color-blue" onClick="openNetDetail('{{= bsContract.businessCondition}}')">{{= bsContract.businessCondition}}</a></div>
+                <div><span class="ys-font-color-75">合同审批表</span><a class="ys-font-color-blue" onClick="openNetDetail('{{= bsContract.termsCondition}}')">{{= bsContract.termsCondition}}</a></div>
+        </div>
+
+        <div class="ys-chart" style="width:100%;height:280px"></div>
+        </div>
+    </div>
+</script> -->
+    <script type="text/x-jquery-tmpl" id="ys-store-info">
+        <div class="ys-store-info model-info">
+            <div>
+                <em class="ys-icon ys-icon-location"></em>
+                <span class="storeNo ys-font-size-18">1</span>
+                <span class="ys-font-size-18">商铺信息</span>
+            </div>
+            <ul class="ys-store-info-basic clearfix">
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">签批业态</div>
+                    <div>1</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">当前业态</div>
+                    <div>1</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">商铺定位</div>
+                    <div>1</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">商户名</div>
+                    <div>1</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">面积
+                        <div class="glyphicon glyphicon-info-sign" style="color:#ccc;">
+                            <div class="ys-tooltip">
+                                <div>占用铺位总面积1m²</div>
+                                <div style="height:10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>1m²</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">租期</div>
+                    <div>2017</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">单价（标准）</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">总额</div>
+                    <div>1元</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">欠费总额</div>
+                    <div>1元</div>
+                </li>
+            </ul>
+            <div class="ys-chart" style="width:100%;height:280px"></div>
+        </div>
+        </div>
+    </script>
+    <script type="text/x-jquery-tmpl" id="ys-store-info-base">
+        <div class="ys-store-info model-info">
+            <div>
+                <em class="ys-icon ys-icon-location"></em>
+                <span class="storeNo ys-font-size-18">{{= bsStore.storeNo}}</span>
+                <span class="ys-font-size-18">商铺信息（未出租）</span>
+            </div>
+            <ul class="ys-store-info-basic clearfix">
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">签批业态</div>
+                    <div>{{= bsStore.issuingLayoutName}}</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">商铺定位</div>
+                    <div>{{= bsStore.storePositionName}}</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">单价（标准）</div>
+                    <div>
+                        {{if bsStore.bsStoreRentinfoList[0] && bsStore.bsStoreRentinfoList[0].rentPrice}} {{= bsStore.bsStoreRentinfoList[0].rentPrice}}元/m²/月 {{/if}}
+                    </div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">面积
+                        <div class="glyphicon glyphicon-info-sign" style="color:#ccc;">
+                            <div class="ys-tooltip">
+                                <div>计租面积：{{= bsStore.rentSquare}}m²</div>
+                                <div>计费面积：{{= bsStore.propertySquare}}m²</div>
+                                <div>建筑面积：{{= bsStore.structureSquare}}m²</div>
+                                <div>套内面积：{{= bsStore.innerSquare}}m²</div>
+                                <div>签约面积：{{= bsStore.signingSquare}}m²</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>{{= bsStore.rentSquare}}m²</div>
+                </li>
+                <li>
+                    <div class="ys-font-size-12 ys-font-color-75">得房率</div>
+                    <div>{{= bsStore.obtainAreaRatio}}%</div>
+                </li>
+                {{if bsStore.contractNo}}
+                <div class="ys-store-info-statement" style="padding-left: 0px;">
+                    <div><span class="ys-font-color-75">委托合同</span><a class="ys-font-color-blue" onClick="openContractDetail('{{= bsStore.contractNo}}')">{{= bsStore.contractNo}}</a></div>
+                </div>
+                {{/if}}
+            </ul>
+        </div>
+    </script>
+    <script type="text/x-jquery-tmpl" id="ys-sel-blank">
+        <div class="ys-sel-blank ys-blank-block ys-font-size-18 model-info">
+            点击平面图查看商铺详情！
+        </div>
+    </script>
+    <script type="text/x-jquery-tmpl" id="ys-sel-no-store">
+        <div class="ys-sel-no-store ys-blank-block ys-font-size-18 model-info">
+            未绑定商铺信息！
+        </div>
+    </script>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.js"></script>
+<!-- <script src="../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../static/dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/dist/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="../static/dist/js/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../static/dist/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="../static/dist/js/echarts.common.min.js"></script>
+
+<!--可选-->
+<!-- <script src="../static/dist/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/dist/js/underscore-min.js"></script>
+<script src="../static/dist/js/handlebars-v4.0.8.js"></script> -->
+<!--fileuploader-->
+<script type="text/javascript">
+var enrolmentWeb_Path = "";
+var _uid = "";
+
+function showLoading() {
+    console.log('showLoading');
+};
+
+function hideLoading() {
+    console.log("hideLoading");
+}
+</script>
+<!--插件-->
+<!-- <script src="../static/js/utils/jq/jq_plugin_dropdown.js"></script>
+<script src="../static/js/utils/jq/jq_plugin_project_select.js"></script> -->
+<script src="./svg_view.js"></script>
+<!-- <script src="../static/js/views/svgeditor/svgscript/svgLegend.js"></script> -->
+<script src="./jquery.tmpl.js"></script>
+<script src="./bs_floors_area.js"></script>

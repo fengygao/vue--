@@ -1,0 +1,75 @@
+{
+        "nodeId": 0,
+        "nodeName": "业态",
+        "nodeValue": "1",
+        "expanded": true,
+        "children":[
+            {
+                "nodeId": 1,
+                "nodeName": "零售类",
+                "nodeValue": "1001", 
+                "expanded": false,
+                "children":[
+                {
+                    "nodeId": 41,
+                    "nodeName": "快时尚(主力店)", 
+                    "nodeValue": "1001001", 
+                    "expanded": false,
+                    "children":[
+                        {
+                            "nodeId": 139, 
+                            "nodeName": "AAA", 
+                            "nodeValue": "1001001100", 
+                            "expanded": false,
+                            "children":[
+                                {
+                                    "nodeId": 140, 
+                                    "nodeName": "BBB", 
+                                    "nodeValue": "1001001100100", 
+                                    "expanded": false, 
+                                    "children": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nodeId": 42, 
+                    "nodeName": "运动系列(次主力)", 
+                    "nodeValue": "1001002", 
+                    "expanded": false, 
+                    "children": null
+                }              
+            ]
+            },
+            {
+                "nodeId": 2, 
+                "nodeName": "生活配套类", 
+                "nodeValue": "1002", 
+                "expanded": false,
+                "children":[
+                    {
+                        "children": null,
+                        "expanded": false,
+                        "nodeId": 53,
+                        "nodeName": "影院",
+                        "nodeValue": "1002001"
+                    }
+                        
+                ]         
+            },       
+            {
+                "nodeId": 3, 
+                "nodeName": "亲子培训", 
+                "nodeValue": "1003", 
+                "expanded": false
+            },
+            {
+                "nodeId": 4, 
+                "nodeName": "亲子零售", 
+                "nodeValue": "1004", 
+                "expanded": false
+            }
+        ]
+    }
+

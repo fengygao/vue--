@@ -1,0 +1,1437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Document</title>
+    <link href="http://rosefinch/static/scpStatic/static/css/pages/merchant_management/lease_contract_new.css"
+    rel="stylesheet">
+<link href="${base_Path}scpStatic/static/css/pages/merchant_management/lease_contract_new.css" rel="stylesheet">
+    <style >
+        /* 打印样式 */
+        @media print {              
+            .input-comm{
+                min-width: 100px ;
+                text-decoration:underline ;
+                display: inline-block;
+                text-align: center;
+            }
+            .special{
+                text-decoration:none !important;
+            }
+            .enclosure{
+                page-break-after: always;
+            }
+         }
+        .body {
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEB9AH0AAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAJPBJ0DAREAAhEBAxEB/8QAGwABAAMBAQEBAAAAAAAAAAAAAAQFBgMCAQr/xAA2EAEAAQMDAwIEBAUDBQEAAAAAAQIDEQQhMQUSQVFhEyIycUKBkbEUUmKh8CPB8TM0stHhov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9k=);
+            background-size: 78%;
+            font-size:11px;
+            line-height: 17px;
+            letter-spacing:3px;
+        } 
+        .title{
+            font-size:26px;
+        }      
+    </style>
+</head>
+<body>
+    <div class="body">
+        <img style=" position: relative;
+        left:0;
+        top:0;
+        width:90px;
+        height:103px;"
+        src="data:image/png;base64,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"/> 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div style="display: flex;justify-content: space-between;">
+            <p>
+                合同编号:<span class="input-comm special" input-edit len="100" index="1" id="1" title="合同编号" style="line-height: 0;">&nbsp;&nbsp;</span>
+            </p>
+            <p>
+                &nbsp;
+                <span class="input-comm special" len="100" input-edit index="2" id="2" title="项目" style="line-height: 0;">&nbsp;&nbsp;</span>项目&nbsp;
+                <span class="input-comm special" len="100" input-edit index="3" id="3" title="商铺" style="line-height: 0;">&nbsp;&nbsp;</span>商铺
+            </p>
+        </div>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="title">
+            <span class="input-comm special" len="240" style="min-width: 180px;line-height: 0;" input-edit index="4" id="4" title="项目名称">&nbsp;&nbsp;</span>项目
+            <br />
+            商铺租赁合同
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />            
+        
+        <div style="text-align: center;font-size: 20px;font-weight: bold;"> 
+            由
+            <br />
+            <br />
+            <div  style="display: inline-block;text-align: left;width: 450px">     
+            甲方:<span input-edit index="5" id="5" class="input-comm special" len="300" title="甲方"
+            style="min-width:350px;">&nbsp;&nbsp;</span>
+             
+            </div>      
+            <br />
+            <br />  
+            <div style="display: inline-block;text-align: left;width: 450px;margin-left:-10px;">          
+            乙方:<span input-edit index="6" id="6" class="input-comm special" len="300" title="乙方"
+            style="min-width:350px;">&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div style="font-size: 22px;font-weight: bold;text-align: center" class="enclosure">
+            于 <span class="input-comm special" len="100" input-edit index="8" id="8"  title="年" >&nbsp;&nbsp;</span>
+            年 <span class="input-comm special" len="100" input-edit index="9" id="9"  title="月">&nbsp;&nbsp;</span> 月
+            <br />
+            <br />
+            签署于<span class="input-comm special" len="150" input-edit index="10" id="10"  title="地点">&nbsp;&nbsp;</span>
+        </div>
+      
+        <br />
+        <br />
+        <br />
+        <br />
+        <p style="font-size: 40px;font-weight: bold; width:100px;margin: 0 auto;">
+            目录
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p class="bold" >
+             &nbsp; 正文
+        </p>
+        <div class="indent2">
+            <p>1.定义</p>
+            <p>2.商铺概述</p>
+            <p>3.租赁用途</p>
+            <p>4.交付日期和租赁期限</p>
+            <p>5.租金和支付方式</p>
+            <p>6.租赁保证金、物业管理费和其他费用</p>
+            <p>7.进场装修和再装修</p>
+            <p>8.商铺使用要求和维修责任</p>
+            <p>9.营业</p>
+            <p>10.商铺的出入</p>
+            <p>11.商铺返还时的状态</p>
+            <p>12.转租、转让和交换</p>
+            <p>13.解除本合同的条件</p>
+            <p>14.违约责任</p>
+            <p>15.豁免条款</p>
+            <p>16.不可抗力</p>
+            <p>17.保险</p>
+            <p>18.税费</p>
+            <p> 19.权利的放弃、部分有效和非排他性补救</p>
+            <p>20.送达</p>
+            <p>21.其他条款</p>
+            <p>22.特别条款</p>
+        </div>
+        <br />
+        <div class="indent2">
+            <p class="bold">附件</p>
+            <p>附件一 该商铺平面图</p>
+            <p>附件二 商铺交付日乙方应缴费用</p>
+            <p>附件三 交付标准</p>
+            <p>附件四 商铺使用交接书</p>
+            <p>附件五 空调外机位置及尺寸图</p>
+            <p>附件六 甲乙双方证照（营业执照、身份证明、组织机构代码证、税务登记证复印件）</p>
+            <p>附件七 承租人保证书</p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />      
+        <div class="indent2">            
+            <div class="bold" style="font-size: 26px;text-align: center">
+                <span class="input-comm special" len="200" style="min-width:200px;" input-edit index="12" id="12" title="正文项目名称">&nbsp;&nbsp;</span>
+                项目商铺租赁合同
+            </div>
+            <br />
+            <br />
+            <p class="bold">本合同双方当事人：</p>
+            <p class="bold">
+                出租方(甲方)：<span class="input-comm special" len="300" style="min-width:350px;" input-edit index="13"
+                    id="13" title="出租方">&nbsp;&nbsp;</span>
+            </p>
+            <p class="bold">承租方(乙方)：<span input-edit index="14" id="14" class="input-comm special" len="200"
+                    style="min-width:350px;" title="承租方">&nbsp;&nbsp;</span>    
+            </p>
+            <br />
+            <p style="text-indent:2em;">
+                根据《中华人民共和国合同法》等法律法规的规定，甲乙双方在平等、自愿、公平和诚实信用的基础上，经协商一致，就乙方承租甲方可依法出租的商铺事宜，订立本合同。本合同项下所有条款经双方一致同意后予以达成，乙方不因自身经营困难及商场客观状况等因素而要求甲方调整本合同项下条款，包括但不限于租金等。
+            </p>
+
+            <p class="bold">1.定义</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>1.1“本商场”是指坐落于<span class="input-comm" len="100" input-edit index="16" id="16" title="商场位置">&nbsp;&nbsp;</span>（推广名：<span class="input-comm" len="100" input-edit index="20"
+                        id="20" title="推广名">&nbsp;&nbsp;</span>如：乐坊芦恒）。本项目《房地产权证》（大产证）编号：<span class="input-comm" len="100" input-edit
+                        index="21" id="21" title="房产权编号">&nbsp;&nbsp;</span>。 </p>
+                <p>1.2“该商铺”是指本合同第2条所述的商铺。</p>
+                <p>1.3“出租人（甲方）”：是指<span class="input-comm" len="100" style="min-width: 200px" input-edit index="22"
+                        id="22" title="商铺出租方">&nbsp;&nbsp;</span>。甲方拥有本商场合法的对外租赁的权利。</p>
+                <p>1.4“承租人（乙方）”：指承租单位或承租个人，是本合同约定商铺的承租方和经营者，即按照中华人民共和国法律规定，经工商行政管理部门注册登记、具有合法经营权的独立法人或其他经济组织，或者具有完全民事行为能力、有与其所从事的商业经营活动相适应的资金和经验的自然人。
+                </p>
+                <p>1.4“承租人（乙方）”：指承租单位或承租个人，是本合同约定商铺的承租方和经营者，即按照中华人民共和国法律规定，经工商行政管理部门注册登记、具有合法经营权的独立法人或其他经济组织，或者具有完全民事行为能力、有与其所从事的商业经营活动相适应的资金和经验的自然人。
+                </p>
+                <p>1.5“租赁”：是指甲方将该商铺及其设施的使用权利、管理责任和经营权利交由乙方行使，由乙方自筹资金、自担风险、自负盈亏、独立自主地进行本合同约定范围内的商业经营或服务，乙方须按约定缴付本合同项下所有需由乙方承担的费用，包括但不限于租金、物业管理费和其他相关费用。
+                </p>
+                <p>1.6“建筑面积”：是指本合同第2条所约定的得房率约为<span class="input-comm" len="100" input-edit index="23"
+                        id="23" title="得房率">&nbsp;&nbsp;</span>的面积。</p>
+                <p>1.7“租赁期限”是指本合同第4条所约定的租赁合同起止时间。</p>
+                <p>1.8“商铺交付日”是指按照本合同第4条之约定甲乙双方办理该商铺交付手续的日期。</p>
+                <p>1.9“租金起算日”是指装修免租期届满之次日，见本合同第4条之相关约定。</p>
+                <p>1.10“物业管理费起算日”是指商铺交付日之当日，见本合同第6条之相关约定。</p>
+                <p>1.11“租赁保证金”是指乙方按照本合同第6条之约定向甲方缴纳的金额。</p>
+                <p>1.12“装修免租期”是指本合同第4条所约定的装修免租期。</p>
+                <p>1.13“租金”是指本合同第5条所规定的租金（包括固定租金、保底租金和营业额提成租金）。</p>
+                <p>1.14“营业额”是指乙方在该商铺内从事任何经营及利用该商铺或其设施，直接或间接收取的所有现金、支票、营业额与应收账款，以及其他任何形式的收益，不扣除任何税款和费用。</p>
+                <p>1.15“物业管理费”是指本合同第6条所规定的物业管理费。</p>
+                <p>1.16“市场推广费”是指本合同第6条所规定的市场推广费。</p>
+                <p>1.17“本合同”是指甲乙双方签订的本合同及其附件，并包括经甲乙双方同意做出的任何书面修改或补充。</p>
+            </div>
+
+
+        </div>
+        <br />
+        
+        <div class="indent2">
+            <p class="bold">2.商铺概述</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>2.1甲方出租给乙方的商铺坐落在本商场<span class="input-comm" len="100" input-edit index="24" id="24" title="商铺位置(层)">&nbsp;&nbsp;</span>层<span
+                        class="input-comm" len="100" input-edit index="25" id="25" title="商铺位置(室)">&nbsp;&nbsp;</span>室(以下简称该商铺)。</p>
+                <p>2.2该商铺建筑面积为<span class="input-comm" len="100" input-edit index="26"
+                        id="26" title="商铺面积">&nbsp;&nbsp;</span>平方米。该建筑面积是计算该商铺租金等费用的唯一面积依据。无论现场面积是否发生增减，或者该面积是否与其他测绘机构所测出的面积有差异，甲乙双方均承诺不对上述面积作出调整。该商铺平面图见本合同附件一，仅作为识别用途。
+                </p>
+                <p>2.3 本合同有效期内，甲方有权整体或部分抵押本商场，乙方放弃事先得到甲方书面通知的权利。</p>
+                <p>2.4签署本合同前，甲方已明确告知乙方：如甲方将本商场向银行设定抵押贷款，甲方无需事先通知乙方，乙方对此表示了解，并自愿与甲方签署本合同。</p>
+                <p>2.5
+                    该商铺的交付标准由甲乙双方在本合同附件三中加以列明。甲乙双方同意：该附件约定的交付标准作为甲方向乙方交付该商铺的依据，并作为本合同终止时乙方向甲方返还该商铺时甲方的验收依据，除非本合同或甲乙双方另有约定的除外。
+                </p>
+            </div>
+        </div>
+        <br />
+        <div class="indent2">
+            <p class="bold">3.租赁用途</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>3.1乙方向甲方承诺，租赁该商铺作为<span class="input-comm" len="100" input-edit index="27" id="27" title="业态">&nbsp;&nbsp;</span>业态<span
+                        class="input-comm" len="100" input-edit index="28" id="28" title="业种">&nbsp;&nbsp;</span>业种，品牌或商号名称为<span
+                        class="input-comm" len="100" input-edit index="29" id="29" title="商号名称">&nbsp;&nbsp;</span>。乙方为该品牌或商号的法定权利人或授权经营人。本合同有效期内，乙方必须确保对上述品牌或商号的使用权或所有权，并于商铺交付日前将上述有关证明资料复印件提交甲方，否则甲方有权解除本合同，并按照本合同第13.2条追究乙方的违约责任。
+                </p>
+                <p>3.2乙方保证，在本合同有效期内未征得甲方书面同意，不擅自改变上述约定的使用用途。</p>
+                <P>3.3乙方向甲方承诺，遵守包括但不限于甲方制定并保留最终修改和解释权利的《租户手册》及其他管理公约。</p>
+                <p>3.4甲方保留委托专业的商业管理公司担任本商场的商业管理工作，并授权其从事商业管理、物业管理等工作，以及授权其从事与本商场管理工作有关的其他事项的权利。</p>
+            </div>
+        </div>
+        <br />
+        <div class="indent2">
+            <p class="bold">4.交付日期和租赁期限</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>4.1 “年”，是指连续365日。本合同的租赁期限为<span class="input-comm" len="100" input-edit index="32" id="32"
+                        title="租赁期限">&nbsp;&nbsp;</span>，自<span class="input-comm" len="100" input-edit index="33"
+                        id="33" title="合同开始年份">&nbsp;&nbsp;</span>年<span class="input-comm" len="100" input-edit index="34" id="34"
+                        title="合同开始月份">&nbsp;&nbsp;</span>月<span class="input-comm" len="100" input-edit index="35" id="35" title="合同开始日">&nbsp;&nbsp;</span>日
+                    至<span class="input-comm" len="100" input-edit index="36" id="36" title="合同停止年份">&nbsp;&nbsp;</span>年<span class="input-comm"
+                        len="100" input-edit index="37" id="37" title="合同停止月份">&nbsp;&nbsp;</span>月<span class="input-comm" len="100" input-edit
+                        index="38" id="38" title="合同停止日">&nbsp;&nbsp;</span>日(暂定)，具体租赁期限自商铺交付日（具体以甲乙双方签署的《商场使用交接书》之约定为准）起开始计算。</p>
+                <p>4.2该商铺交付日期：（暂定）<span class="input-comm" len="100" input-edit index="39" id="39" title="商铺交付年份">&nbsp;&nbsp;</span>年<span
+                        class="input-comm" len="100" input-edit index="40" id="40" title="商铺交付月份">&nbsp;&nbsp;</span>月<span
+                        class="input-comm" len="100" input-edit index="41"
+                        id="41" title="商铺交付日">&nbsp;&nbsp;</span>日，如甲方不能按本合同约定的交付日期交付商铺的，甲方有权延期交付；乙方承诺在此基础上给予甲方60日的商铺交付宽限期，甲方在上述交付宽限期内向乙方交房的，乙方不得追究甲方的违约责任。在该商铺满足附件三约定的交付标准的条件下，甲方将于该商铺交付日前5日以邮件或短信方式向乙方送达交付通知。乙方明确：在签署本合同前已现场查验过该商铺，对该商铺及其现有状况及所有相关之配套设施状况已充分了解，同意该商铺现状已满足本合同附件三约定的交付标准，并承诺按照甲方交付通知无条件办理交付手续。
+                </p>
+                
+                <p>4.3该商铺交付手续：乙方应于该商铺交付通知所载的交付日：</p>
+                <div style="padding-left: 2em">
+                    <p>4.3.1向甲方缴交有关费用（详见附件二）；</p>
+                    <p>4.3.2签署《租户手册》等管理公约；</p>
+                    <p>4.3.3与甲方共同验收该商铺；</p>
+                    <p>4.3.4签署《商铺使用交接书》（详见附件四）。该商铺交付完成的标志为甲乙双方签署《商铺使用交接书》。该交接书一经签署，即视为甲方已按照本合同约定完成了该商铺向乙方的交付义务。如果该交接书未能及时签署，则除非乙方在上述约定的商铺交付日之后3日内向甲方送达有充分证据证明的交付瑕疵文件，否则，即视为甲方已按照本合同约定完成了该商铺向乙方的交付义务。
+                    </p>
+                </div>
+                <p>4.4
+                    如果乙方未于上述约定之商铺交付日前来本商场现场办理或者办理完毕该商铺的交付手续，则自该商铺交付日期至乙方实际办理完毕商铺交付手续日期之间的天数将在乙方的装修免租期内扣除。乙方仍应向甲方支付上述延迟办理该商铺交付手续期间的有关费用。
+                </p>
+                <p>4.5如果因甲方原因未能在上述约定之商铺交付日将该商铺交付给乙方，则装修免租期及相关日期均相应顺延；同时甲方享有上述约定的交付宽限期。如果超过上述交付宽限期，甲方仍未能将该商铺交付给乙方，则乙方有权向甲方发出书面催告。
+                </p>
+                <p>4.6自商铺交付日起算，乙方享有<span class="input-comm" len="100" input-edit index="42" id="42"
+                        title="装修免租期">&nbsp;&nbsp;</span>日的装修免租期，自<span class="input-comm" len="100" input-edit index="43"
+                        id="43" title="装修免租开始年">&nbsp;&nbsp;</span>年<span class="input-comm" len="100" input-edit index="44" id="44"
+                        title="装修免租开始月">&nbsp;&nbsp;</span>月<span class="input-comm" len="100" input-edit index="45"
+                        id="45" title="装修免租开始日">&nbsp;&nbsp;</span>日至<span class="input-comm" len="100" input-edit index="46" id="46" title="装修免租结束年">&nbsp;&nbsp;</span>年<span
+                        class="input-comm" len="100" input-edit index="47" id="47" title="装修免租结束月">&nbsp;&nbsp;</span>月<span class="input-comm"
+                        len="100" input-edit index="48"
+                        id="48" title="装修免租结束日">&nbsp;&nbsp;</span>日(暂定，具体以甲乙双方签署的《商场使用交接书》之约定为准)，并自装修免租期届满之次日（亦即“租金起算日”）起计算并缴纳租金。在上述装修免租期内，乙方无需缴纳租金，但在该期间内乙方仍需缴纳相关费用（包括但不限于物业管理费、装修管理费、水费、电费、煤气费、通讯费等）。
+                </p>
+                <p>4.7租赁期限届满或者发生本合同提前解除的情形，甲方有权收回该商铺，乙方应及时返还。除甲方书面同意外，该商铺在乙方返还甲方时应恢复至交付时的状态(自然损耗除外)或者甲方届时书面认可的状态。</p>
+                <p>4.8 乙方在同等条件下对该商铺享有优先续租权，但应于租赁期届满前3个月向甲方提出书面申请。但具体是否同意续租，以甲方为准。</p>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">5.租金和支付方式</p>
+            <div style="padding-left: 2em">
+                <p>5.1本合同有效期内，该商铺的租金计算方式如下：</p>
+                <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                    <p index="9999" style="padding-left: 2em">该商铺每月固定租金为：</p> 
+                    <!-- <p>注：本合同采用如下方案<span class="input-comm" len="100" input-edit index="15" id="15" title="合同所选用方案"">&nbsp;&nbsp;</span>；</p> -->
+                    <!-- <span style="border:1px solid #000;padding: 2px 0;margin-left: -30px;">（方案一）</span>
+                    <p>5.1.1该商铺租金采取月固定租金【日单价租金×该商铺建筑面积×（365/12）】的计算方式。</p> -->                                                  
+                    <!-- <p>第<span class="input-comm" len="100" input-edit index="49" id="49" title="第一段">&nbsp;&nbsp;</span>段：人民币<span
+                            class="input-comm" len="100" input-edit index="50" id="50" title="第一段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                            class="input-comm" len="100" input-edit index="51" id="51" title="第一段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                            class="input-comm" len="100" input-edit index="52" id="52" title="第一段折合日租金">&nbsp;&nbsp;</span>元；</p>
+                    <p>第<span class="input-comm" len="100" input-edit index="53" id="53" title="第二段">&nbsp;&nbsp;</span>段：人民币<span
+                            class="input-comm" len="100" input-edit index="54" id="54" title="第二段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                            class="input-comm" len="100" input-edit index="55" id="55" title="第二段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                            class="input-comm" len="100" input-edit index="56" id="56" title="第二段折合日租金">&nbsp;&nbsp;</span>元；</p>
+                    <p>第<span class="input-comm" len="100" input-edit index="57" id="57" title="第三段">&nbsp;&nbsp;</span>段：人民币<span
+                            class="input-comm" len="100" input-edit index="58" id="58" title="第三段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                            class="input-comm" len="100" input-edit index="59" id="59" title="第三段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                            class="input-comm" len="100" input-edit index="60" id="60" title="第三段折合日租金">&nbsp;&nbsp;</span>元。</p> -->
+                    <!-- <p>第<span class="input-comm" len="100" input-edit index="61" id="61" title="第四段">&nbsp;&nbsp;</span>段：人民币<span
+                            class="input-comm" len="100" input-edit index="62" id="62" title="第四段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                            class="input-comm" len="100" input-edit index="63" id="63" title="第四段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                            class="input-comm" len="100" input-edit index="64" id="64" title="第四段折合日租金">&nbsp;&nbsp;</span>元。</p>
+                    <p>第<span class="input-comm" len="100" input-edit index="65" id="65" title="第五段">&nbsp;&nbsp;</span>段：人民币<span
+                            class="input-comm" len="100" input-edit index="66" id="66" title="第五段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                            class="input-comm" len="100" input-edit index="67" id="67" title="第五段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                            class="input-comm" len="100" input-edit index="68" id="68" title="第五段折合日租金">&nbsp;&nbsp;</span>元。</p> -->
+                    <!-- <p >（主表5行字段）</p> -->
+                    <!-- <p>5.1.2固定租金的支付时间：</p>
+                    <p>（1）固定租金支付周期为<span class="input-comm" len="100" input-edit index="70" id="70"
+                            title="付款周期">&nbsp;&nbsp;</span>，每期支付一次，实行先付后用的原则。乙方应于每期最后一个月的第20日前向甲方预先支付下一期固定租金。上述付款截止日逢法定节假日的，则相应提前。
+                    </p>
+                    <p>（2）首、尾月不足一个整月的，按照实际天数计算，乙方须按甲方要求将账期调整为自然月。</p>
+                    <p>（3）乙方应于签署本合同之同时向甲方支付首期租金，人民币<span class="input-comm" len="100" input-edit index="71" id="71"
+                            title="首期租金金额">&nbsp;&nbsp;</span>元（大写：<span class="input-comm" len="100" input-edit index="72"
+                            id="72" title="首期租金大写">&nbsp;&nbsp;</span>元整）。</p>
+                    <p>（4）甲方有权但无义务向乙方送达付款通知。无论乙方是否收到上述付款通知，均不影响乙方严格按照本合同约定按时足额履行支付租金、物业管理费以及其他相关费用的义务。</p>
+                    <span style="border:1px solid #000;padding: 2px 0;margin-left: -30px;">（方案二）</span>
+                    <p>5.1.1该商铺租金采取月保底租金或月营业额提成（扣点）租金（两者取其高）的计算方式。</p>
+                    <p>（1）月保底租金【日单价租金×该商铺建筑面积×（365/12）】为：</p>
+                    <div>
+                        <p>第<span class="input-comm" len="100" input-edit index="73" id="73" title="第一段">&nbsp;&nbsp;</span>段：人民币<span
+                                class="input-comm" len="100" input-edit index="74" id="74" title="第一段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                                class="input-comm" len="100" input-edit index="75" id="75" title="第一段月租金大写">&nbsp;&nbsp;</span>元整）</p> -->
+                        <!-- <p>第<span class="input-comm" len="100" input-edit index="77" id="77" title="第二段">&nbsp;&nbsp;</span>段：人民币<span
+                                class="input-comm" len="100" input-edit index="78" id="78" title="第二段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                                class="input-comm" len="100" input-edit index="79" id="79" title="第二段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                                class="input-comm" len="100" input-edit index="80" id="80" title="第二段折合日租金">&nbsp;&nbsp;</span>元;</p>
+                        <p>第<span class="input-comm" len="100" input-edit index="81" id="81" title="第三段">&nbsp;&nbsp;</span>段：人民币<span
+                                class="input-comm" len="100" input-edit index="82" id="82" title="第三段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                                class="input-comm" len="100" input-edit index="83" id="83" title="第三段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                                class="input-comm" len="100" input-edit index="84" id="84" title="第三段折合日租金">&nbsp;&nbsp;</span>元。</p> -->
+                    <!-- </div> -->
+                    <!-- <p>同方案一</p>
+                    <p>（2）月营业额提成（扣点）租金：该商铺每月累计营业额收入的<span class="input-comm" len="100" input-edit index="85" id="85"
+                            title="营业额百分比">&nbsp;&nbsp;</span>％。</p>
+                    <p>（3）月保底租金、月营业额提成（扣点）租金两者取其高。</p>
+                    <p>5.1.2保底租金的支付时间：</p>
+                    <p>（1）保底租金每<span class="input-comm" len="100" input-edit index="86" id="86"
+                            title="付款周期">&nbsp;&nbsp;</span>月为一期，每期支付一次，于每期最后一个月的第20日前预先支付下一期保底租金。上述付款日期逢法定节假日的，则相应提前。</p>
+                    <p>（2）首、尾月不足一个整月的，按照实际天数计算，乙方须按甲方要求将账期调整为自然月。</p>
+                    <p> （3）乙方应于签署本合同之同时向甲方支付首期租金，人民币<span class="input-comm" len="100" input-edit index="87" id="87"
+                            title="首期租金金额">&nbsp;&nbsp;</span>元（大写：<span class="input-comm" len="100" input-edit index="88" id="88"
+                            title="大写">&nbsp;&nbsp;</span>元整）。</p>
+                    <p> （4）甲方有权但无义务向乙方送达付款通知。无论乙方是否收到上述付款通知，均不影响乙方严格按照本合同约定按时足额履行支付租金、物业管理费以及其他相关费用的义务。</p>
+                    <p>5.1.3乙方按照上述约定支付保底租金后，待当期营业额提成（扣点）租金确定后，该期营业额提成（扣点）租金超过该期保底租金的部分，则乙方在支付下一期保底租金的同时将差额部分同时缴纳。</p> -->
+                    <!-- <span style="border:1px solid #000;padding: 2px 0;margin-left: -30px;">（方案三）&nbsp;&nbsp;</span>                  
+                    <p>5.1.1该商铺租金采取保底租金加营业额提成（扣点）租金的计算方式。</p>
+                    <p>（1）月保底租金【日单价租金×该商铺建筑面积×（365/12）】为：</p>
+                    <div>
+                        <p>第<span class="input-comm" len="100" input-edit index="90" id="90" title="第一段">&nbsp;&nbsp;</span>段：人民币<span
+                                class="input-comm" len="100" input-edit index="91" id="91" title="第一段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                                class="input-comm" len="100" input-edit index="92" id="92" title="第一段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                                class="input-comm" len="100" input-edit index="93" id="93" title="第一段折合日租金">&nbsp;&nbsp;</span>元;</p>
+                        <p>第<span class="input-comm" len="100" input-edit index="94" id="94" title="第二段">&nbsp;&nbsp;</span>段：人民币<span
+                                class="input-comm" len="100" input-edit index="95" id="95" title="第二段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                                class="input-comm" len="100" input-edit index="96" id="96" title="第二段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                                class="input-comm" len="100" input-edit index="97" id="97" title="第二段折合日租金">&nbsp;&nbsp;</span>元;</p>
+                        <p>第<span class="input-comm" len="100" input-edit index="98" id="98" title="第三段">&nbsp;&nbsp;</span>段：人民币<span
+                                class="input-comm" len="100" input-edit index="99" id="99" title="第三段月租金">&nbsp;&nbsp;</span>元/月（大写：<span
+                                class="input-comm" len="100" input-edit index="100" id="100" title="第三段月租金大写">&nbsp;&nbsp;</span>元整），折合日单价租金为人民币<span
+                                class="input-comm" len="100" input-edit index="101" id="101" title="第三段折合日租金">&nbsp;&nbsp;</span>元。</p>
+                    </div>
+                    <P>同方案一</P>
+                    <p>（2）月营业额提成（扣点）租金：该商铺每月累计营业额收入的<span class="input-comm" len="100" input-edit index="102"
+                            id="102" title="月营业额提成租金">&nbsp;&nbsp;</span>％。</p>
+                    <p>（4）月保底租金、月营业额提成（扣点）租金两者取其总和。</p>
+                    <p>5.1.2保底租金的支付时间：</p>
+                    <p>（1）保底租金每<span class="input-comm" len="100" input-edit index="103"
+                            id="103" title="保底租金周期">&nbsp;&nbsp;</span>月为一期，每期支付一次，于每期最后一个月的第20日前预先支付下一期保底租金。上述付款日期逢法定节假日的，则相应提前。</p>
+                    <p>（2）首、尾月不足一个整月的，按照实际天数计算，乙方须按甲方要求将账期调整为自然月。</p>
+                    <p>（3）乙方应于签署本合同之同时向甲方支付首期租金，人民币<span class="input-comm" len="100" input-edit index="104"
+                            id="104" title="乙方首期租金金额">&nbsp;&nbsp;</span>元（大写：<span class="input-comm" len="100" input-edit index="105"
+                            id="105" title="乙方首期租金金额大写">&nbsp;&nbsp;</span>元整）。</p>
+                    <p>（4）甲方有权但无义务向乙方送达付款通知。无论乙方是否收到上述付款通知，均不影响乙方严格按照本合同约定按时足额履行支付租金、物业管理费以及其他相关费用的义务。</p>
+                    <p>5.1.3乙方按照上述规定支付保底租金后，待当期营业额提成（扣点）租金确定后，乙方在支付下一期保底租金的同时将该期营业额提成（扣点）租金同时缴纳。</p>
+                    <span style="border:1px solid #000;padding: 2px 0;margin-left: -30px;">（方案三）</span>
+                    <p>5.1.1该商铺租金采取纯营业额提成（扣点）租金的计算方式。月营业额提成（扣点）租金为该商铺每月累计税前营业额收入的<span class="input-comm" len="100"
+                            input-edit index="107" id="107" title="月营业额提成租金">&nbsp;&nbsp;</span>％。</p>
+                    <p>5.1.2支付时间：待当月营业额提成（扣点）租金确定后，乙方于次月第5个工作日前缴纳该月的营业额提成（扣点）租金。</p>
+                    <p>5.1.3甲方有权但无义务向乙方送达付款通知。无论乙方是否收到上述付款通知，均不影响乙方严格按照本合同约定按时足额履行支付租金、物业管理费以及其他相关费用的义务。</p>
+                </div> -->
+                <p>5.2乙方在本商场采取独立收银的收银方式，即乙方自设收银台并自行独立收银。</p>
+                <p style="text-indent: -2em;margin-left: 2em;">5.3乙方可以以甲方认可的支付方式向甲方支付租赁保证金、租金以及其他费用，并以甲方收到日期为乙方付款日期，具体为：
+                </p>
+                <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                    <p>5.3.1乙方以现金方式支付的，以支付日期为付款日期。</p>
+                    <P>5.3.2乙方以银行转帐方式支付的，以甲方帐户到帐日期为付款日期。</p>
+                    <p>5.3.3乙方以支票方式支付的，必须于约定付款日期之前3个工作日支付予甲方，否则视为逾期支付，乙方须承担相应的违约责任。</p>
+                </div>
+                <p style="text-indent: -2em;margin-left: 2em;">5.4甲方应在收到乙方付款后的10个工作日内就乙方的该笔付款出具发票（就保证金或押金出具收据）。</p>
+                <p style="text-indent: -2em;margin-left: 2em;">5.5甲方向乙方提供下列银行账户作为收取租赁保证金、租金、物业管理费以及其他费用的指定帐户：</p>
+                <div style="padding-left: 2em;">
+                    <p>户&nbsp;名：<span class="input-comm special" len="100" input-edit index="108" id="108"
+                            title="出租方 银行收款账户名">&nbsp;&nbsp;</span></p>
+                    <P>开户行：<span class="input-comm special" len="100" input-edit index="109" id="109" title="出租方 银行开户行">&nbsp;&nbsp;</span>
+                    </p>
+                    <P>账&nbsp;号：<span class="input-comm special" len="100" input-edit index="110" id="110" title="出租方 银行帐号">&nbsp;&nbsp;</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+        <div class="indent2">
+            <p class="bold">6.租赁保证金、物业管理费和其他费用</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>6.1租赁保证金：乙方应于签署本合同之同时向甲方支付<span class="input-comm" len="100" input-edit index="111" id="111"
+                        title="租金保证金月数">&nbsp;2&nbsp;</span>个月的年末月租金和物业管理费之总和的租赁保证金（有预售卡经营情况的商户，租赁保证金缴纳不少于三个月，并有义务去政府职能部门备案），计人民币<span
+                        class="input-comm" len="100" input-edit index="112" id="112" title="租赁保证金金额">&nbsp;&nbsp;</span>元（大写：<span
+                        class="input-comm" len="100" input-edit index="113" id="113" title="租赁保证金金额大写">&nbsp;&nbsp;</span>
+                    元整）【包含乙方在签署《租赁意向书》时已向甲方缴纳的相当于<span
+                    class="input-comm" len="100" input-edit index="7" id="7" title="月数">&nbsp;&nbsp;</span>个月平均月租金和物业管理费之总和的租赁意向金（如有）,计人民币<span class="input-comm" len="100"
+                        input-edit index="114" id="114" title="租赁意向金金额">&nbsp;&nbsp;</span>元（大写：<span class="input-comm" len="100"
+                        input-edit index="115" id="115"
+                        title="租赁意向金金额大写">&nbsp;&nbsp;</span>元整）。在签署本合同时，该租赁意向金自动转化为租赁保证金的一部分】。甲方收取上述租赁保证金后应向乙方开具收款凭证。</P>
+                <p>6.2 本合同有效期内，乙方不得将上述租赁保证金冲抵乙方应付之租金、物业管理费、违约金或其他费用。</P>
+                <P>6.3本合同有效期内，甲方有权从上述租赁保证金中抵扣任何乙方应付未付的租金、违约金及其他费用，或由于乙方责任而导致的对甲方或第三方的损害赔偿。上述租赁保证金不足部分，乙方应于收到甲方书面通知之日起10日内补足。
+                </P>
+                <P>6.4租赁期限届满，上述租赁保证金除用以抵充本合同约定由乙方承担的费用或由甲方先行支付的乙方对第三方的损害赔偿外，甲方应在乙方交还该商铺并且提交了乙方之前注册于该商铺的各类证照的注销或变更证明之后30日内将租赁保证金及任何其它尚未退还的保证金（如有）一次性无息退还乙方。本条上述“合同约定由乙方承担的费用”系指本合同项下乙方应向甲方支付之所有款项，包括但不限于租金、物业管理费、非正常营业时间的中央空调运行费用、公用事业费用、停车费、违约金、赔偿金等。
+                </P>
+                <P>6.5本合同有效期内，乙方应向甲方支付物业管理费。物业管理费标准为每平方米建筑面积每月人民币<span class="input-comm" len="100" input-edit
+                        index="116" id="116" title=" 物业管理费单价（元/平方米/月）">&nbsp;&nbsp;</span>元（大写：<span class="input-comm" len="100"
+                        input-edit index="117" id="117" title=" 物业管理费单价大写">&nbsp;&nbsp;</span>），每月合计人民币<span class="input-comm"
+                        len="100" input-edit index="118" id="118" title="物业管理费合计每月金额">&nbsp;&nbsp;</span>元（大写：<span
+                        class="input-comm" len="100" input-edit index="119" id="119" title="物业管理费合计每月金额大写 ">&nbsp;&nbsp;</span> 元整）。
+                </P>
+                <P>6.6物业管理费包括正常营业时间的中央空调运行费用（如有）、公共厕所的使用费、垃圾清运费、公用电梯运行费、公共区域保安费、公共区域清洁费、公共区域绿化费用、公共部位水电费、公用设备的维修和保养费用以及物业管理人员的工资等。本合同有效期内，甲方保留根据每年政府公布的物价上涨指数幅度对物业管理费标准作适当调整的权利，乙方对此表示理解并同意。
+                </P>
+                <P>6.7中央空调供应时间为本商场正常营业时间，具体参照甲方制定《租户手册》等管理公约执行。如乙方需在本商场正常营业时间以外使用中央空调，应支付额外的中央空调运行费，费用标准由甲方确定。</P>
+                <P>6.8餐饮业的餐厨（泔脚）垃圾清运费用标准以及支付时间和方式以环卫部门公布的为准。</P>
+                <p>6.9乙方应于该商铺交付日之当日预先支付装修免租期的物业管理费及其他相关费用（费用标准参见本合同附件二），并于本合同有效期内按照甲方的规定按时向甲方支付物业管理费。租赁期限内物业管理费的支付时间参照租金的支付时间计算。
+                </P>
+                <P>6.10乙方必须自行承担该商铺内产生的各项费用（包括但不限于电费、水费、电话费、燃气费、餐厨垃圾清运费等公用事业费用）。乙方须按照甲方书面结算通知向甲方支付该笔费用。电费、水费按所安装的独立计量装置每月的实际用量计数,收费标准为电费：人民币<span
+                        class="input-comm" len="100" input-edit index="120" id="120"
+                        title="电费单价">&nbsp;&nbsp;</span>元/千瓦时；水费：人民币<span class="input-comm" len="100" input-edit index="121"
+                        id="121"
+                        title="水费单价">&nbsp;&nbsp;</span>元/立方米(收费标准详的规定按时足额见附件二)。如甲方已向有关单位代付上述相关费用，乙方应根据甲方的书面通知在所告知的期限内偿还甲方已代付的上述相关费用；同时甲方将根据国家调整公用事业费标准进行调整，具体调整以甲方书面通知为准。
+                </P>
+               
+                <P>6.11如乙方向甲方申请增加或调整相关公用事业用量，须经甲方确认后由甲方为乙方增加。但后续实际运营中乙方并未达到相应用量的，则乙方须按照甲方为增加或调整相关公用事业用量所产生的一切费用的双倍标准作为赔偿；如果造成甲方其他损失的，乙方须承担一切直接及间接经济损失。
+                </P>
+                <P>6.12如乙方在本合同有效期内需在本商场内组织独自的商业推广活动，事前必须取得甲方的书面同意，并向甲方支付必要的费用（包括但不限于场地临时租赁费、管理及安全配合费用等），收费标准由甲乙双方协商确定。
+                </P>
+                <P>6.13广告位租赁费：如乙方须租用商场内外灯箱、外墙广告等，须另行支付租赁费用及产生的公用事业费用等（具体由甲乙双方另行签订广告位租赁合同）。</P>
+                <P>6.14市场推广费：<span class="input-comm" len="100" input-edit index="122" id="122"
+                        title="市场推广费单价">&nbsp;&nbsp;</span>元/㎡/月（计租面积），自租金起算日收取。市场推广费每<span class="input-comm" len="100"
+                        input-edit index="123" id="123" title="市场推广费的收费周期">&nbsp;&nbsp;</span>月为一期，每期支付一次，乙方应于每期最后一个月的第20日前向甲方预先支付下一期市场推广费。市场推广费用于购物中心整体品牌推广及各商户在购物中心中的促销和宣传（包含购物中心的公众号系统、广播导视系统及会员系统等）。甲方有权调整市场推广费，但每次调整需提前5日以书面形式通知乙方。
+                </P>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">7.进场装修和再装修</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>7.1在乙方就该商铺进场装修(包括但不限于乙方对该商铺进行的内部裝修、分隔、修建、改建或安装、更换设备、装置等)之前，乙方应尽早向甲方提交该商铺的内部装修、设备安装的设计图纸（包括空调、防火设备等）、施工图纸和详细说明一式二份。该设计图纸和施工图纸须首先征得甲方同意（甲方并不因为作出上述同意而须对因乙方的设计缺陷、装修质量等原因导致的损失或对第三方的赔偿负责），并报政府有关部门批准后方可施工。乙方应将政府相关部门的批准文件的复印件提交甲方备案。除非得到甲方和政府相关部门双方的书面同意，乙方不得随意变更已被批准的设计图纸和施工图纸。
+                </p>
+                <p>7.2甲方对乙方装修方案作出的认定，并不代表该方案已符合相关法律法规规定，乙方需自行向有关政府部门进行报批。涉及政府相关部门（包括但不限于质检、消防、环保、卫生部门）审批的各类手续由乙方自行申请办理并承担相应费用。如果政府相关部门在本合同有效期内对乙方的装修提出整改意见，乙方必须立即履行并承担一切责任和费用。
+                </p>
+                <p>7.3如果乙方在获得所有必要的政府有关部门的批准、执照或许可证前, 已开始对该商铺进行装修, 乙方必须对由此而引起的一切后果独自承担责任,
+                    包括但不限于承担因须符合相关政府部门要求而进行的拆除和改建的费用。此外，乙方须对甲方因乙方违反本条约定而发生的一切直接及间接经济损失承担全部赔偿责任。</p>
+                <p>7.4若乙方的实际装修工程与前述经甲方事先同意的图纸不符，则甲方有权要求乙方按图纸进行整改，且乙方在整改完成前不得自行开张营业。因此而产生的一切后果（包括但不限于因整改而产生的额外费用及因整改而拖延工期导致乙方不能在装修免租期结束前完成装修工程并开业）由乙方承担。
+                </p>
+                <p>7.5乙方对该商铺进行装修时，应遵守甲方的装修规定和安排。涉及该商铺消防系统改造施工的，必须聘请甲方指定的施工单位进行。涉及中央空调系统改造施工的，建议聘请甲方指定单位进行。</p>
+                <p>7.6乙方应聘请有资质的装修施工单位并以文明方式在甲方指定的时间段内进行装修施工，不得影响其他承租人的正常装修或经营活动，不得在该商场正常营业时间段内进行有气味、粉尘或噪音的装修施工。</p>
+                
+               
+                <p>7.7乙方装修结束后须通知甲方和政府相关部门对该商铺装修进行验收，并提交装修竣工图纸一式二份。经甲方和政府相关部门验收合格后，乙方方可开始营业。乙方不得以未开始营业为由，拒付或延迟支付到期应付的租金、物业管理费及其他相关费用。
+                </p>
+                <p>7.8乙方在完成上述装修后，如以后需要对该商铺进行再装修，则必须首先取得甲方和政府相关部门（如需要）的许可，并在不影响其他承租方经营的情况下进行。</p>
+                <p>7.9乙方装修不得破坏该商铺的主体结构，否则造成甲方或任何第三方损失的，乙方应赔偿受害方的实际损失。</p>
+                <p>7.10乙方装修结束并经甲方验收合格后1个月内，由乙方书面申请，经甲方同意后将装修押金一次性无息退还乙方。</p>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">8.商铺使用要求和维修责任</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>8.1本合同有效期内，乙方发现甲方所属的该商铺及其附属设施和设备有损坏或故障，或遭受到损毁时，或该商铺发生火警或意外，或该商铺内的水管通道、煤气管道、电线、装置、附属物或其他设施出现损坏、破裂或缺陷时，应立即以口头或书面形式及时通知甲方；甲方应在接到乙方通知后的48小时内进行维修。逾期不维修的，乙方可代为维修，因此产生的合理费用由甲方承担。
+                </P>
+                <p>8.2本合同有效期内，乙方应合理使用甲方所属的该商铺及其附属设施和设备。因乙方使用不当致使该商铺及其附属设施和设备损坏或发生故障的，乙方应负责维修。乙方拒不维修，甲方可代为维修，因此产生的一切费用由乙方承担。
+                </P>
+                <p>8.3本合同有效期内，甲方保证甲方所属的该商铺及其附属设施和设备处于正常的可使用和安全的状态。甲方对该商铺进行检查、养护，应提前1日通知乙方。检查养护时，乙方应予以积极配合。甲方应尽量减少对乙方使用该商铺的影响。
+                </P>
+                <p>8.4 本合同有效期内，乙方自行承担乙方所属的该商铺的装修和附属设施和设备的维修保养责任，并自行承担相应费用。</P>
+                <p>8.5乙方另需装修或者增设附属设施和设备的，应事先征得甲方的书面同意；如按规定需向有关部门报批的，则还须由乙方报有关部门批准后方可进行。乙方未事先征得甲方书面同意，不得擅自对该商铺及其装修、设备和设施进行任何改建或增建。乙方增设的附属设施和设备及其维修责任由乙方自行负责。
+                </P>
+                <p>8.6本合同有效期内，相应的政府 主管部门对该商铺相邻单位提出整改要求，乙方必须根据政府有关部门及甲方要求提供一切必要的协助。</P>
+                <p>8.7未经甲方书面同意前，乙方不得在该商铺内部或外部展览、展示、悬挂从本商场外或内部公共部位足以看到的任何店招、书写标志、标志牌或其他装置（包括但不限于橱窗、玻璃陈列柜、灯箱等），亦不得在该商场任何公共部位、大堂、楼梯平台、过道或通道悬挂任何店招、书写标志、标志牌或其他装置。乙方可以在该商铺入口处放置乙方公司的店招或铭牌。该店招或铭牌由乙方自费制作并采用甲方同意的设计和工艺标准。甲方或其授权第三方有权拆除乙方擅自粘贴、悬挂、放置、展示的任何店招、标志牌、标志、铭牌、装置或与此有关的装饰图案，并由乙方承担由此产生的费用。
+                </P>
+                  
+                <p>8.8乙方如要求在本商场外墙安装乙方之标识，必须事先取得甲方及政府有关主管部门同意并向甲方支付相关费用。乙方应自费安装和维修该等标识并应购买保险。乙方委托安装该标识的工程承包商及该标识的设计与用料应经甲方事先批准。乙方应在返还该商铺时自费将本商场所有安装有乙方标识的部位恢复原状。
+                </P>
+                <p>8.9本合同有效期内，乙方享有对于该商铺以及本商场公共空间和共用设施设备的使用权（另有约定的除外），但甲方有权保留下列权利，但应尽量减小对乙方正常营业的影响：</P>
+                <div style="padding-left: 2em;">
+                    <p>8.9.1进入该商铺检查、保养、修理甲方所属的设施设备，但需事先通知乙方；</P>
+                    <p>8.9.2在任何时间无需征得乙方同意而变更、修缮本商场公共区域和公用设施设备，包括屋顶、墙体、天花、中厅、走道、电梯、自动扶梯、中央空调等的权利；</P>
+                    <p>8.9.3调整本商场公共区域布局的权利；</P>
+                    <p>8.9.4对本商场外墙及公共部位、公共空间的排他权利，包括但不限于：展示或悬挂标志、广告、条幅、灯箱、装饰物的权利。</P>
+                </div>
+                <p>8.10乙方须遵守当地供电部门和甲方制定的所有有关用电的规章制度，不得使该商铺之电缆、电线或其他器具超负荷运转。如因上述设备超负荷运转而导致第三方停电、相关设备毁坏或其他任何损失的，一律由乙方承担全部赔偿责任。
+                </P>
+                <p>8.11除因甲方过错造成外，若该商铺的窗户或玻璃破损、毁坏，乙方必须向甲方支付或偿还因甲方更换该商铺所有破损的窗户和玻璃而引起的一切费用或者乙方于三个工作日内自行负责修复至原状。</P>
+                <p>8.12对由于下列因乙方的过错导致的事故而直接或间接造成甲方或任何其它人的人身或财产损失、损害，乙方须做出赔偿并承担全部责任，甲方并不承担应由乙方赔偿的责任：
+                    <div style="padding-left: 2em;">
+                        <p>（1）该商铺内的任何电器装置、电器用品或电线的故障或失修；</P>
+                        <p>（2）导致水管通道或厕所堵塞或损坏；</P>
+                        <p>（3）火或烟雾在该商铺内扩散；</P>
+                        <p>（4）任何来源的水在该商铺或其任何部分泄漏或满泻；</P>
+                    </div>
+                    乙方于本款项下的责任包括但不限于任何修理、维修费用，以及任何其他相关人员因前述情形向甲方索赔或主张其权益而造成甲方的全部损失，以及甲方因向乙方索赔所发生的一切开支和费用。</P>
+                <p>8.13对于在乙方承租的该商铺以及管理的该商铺设施及区域内发生的事故，造成第三方的人身或财产损失、损害的，乙方应承担全部责任，甲方不负任何赔偿责任。<br />
+                    本条款所指乙方管理的区域，包括但不限于乙方内部的营运区域、洗手间、厨房等区域。<br />
+                    本条款所指乙方管理的房屋设施，包括但不限于乙方内部的装潢装修设施、用具、工具、服务设备，以及乙方的门窗等。<br />
+                    乙方于本款项下的责任包括但不限于任何修理、维修费用，任何其他相关人员因前述情形向甲方索赔或主张其权益而造成甲方的损失，以及甲方/物业管理公司因向乙方索赔所发生的一切开支和费用。</P>
+
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">9.营业</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>9.1乙方承诺：该商铺开始营业日期最晚不迟于装修免租期届满之次日（即“租金起算日”），乙方须确保于装修免租期内完成装修并尽早开业。甲方鼓励乙方在装修免租期内提前开始营业。如果乙方在上述装修免租期提前对外营业，则乙方享有无需缴纳租金之权益，但乙方需缴纳相关费用（包括但不限于物业管理费、水费、电费、煤气费、通讯费等），但本合同另有约定的除外。
+                </p>
+             
+                <P>9.2乙方承诺：在该商铺内经营其业务前,
+                    自费向有关政府部门申请及取得任何必需的包括但不限于如下执照、批准或许可证，并于开始营业之前或开始营业后的合理时间内向甲方提交，否则甲方有权以不符合开业条件为由拒绝乙方开始营业或要求乙方停止营业：
+                </p>
+                <div style="padding-left: 2em;">
+                    <P>9.2.1营业执照副本复印件；</p>
+                    <P>9.2.2商标注册证书复印件（如有）；</p>
+                    <P>9.2.3商标授权证明复印件（如有）；</p>
+                    <P>9.2.4消防验收合格证明；</p>
+                    <P>9.2.5环保验收备案证明；</p>
+                    <P>9.2.6食品经营许可证（如经营餐饮）。</p>
+                </div>
+                甲方应积极配合乙方上述证照资料的办理，但上述乙方的证照资料能否获得批准与甲方无关，并不影响本合同效力。<br />
+                <P>9.3如因甲方原因，导致乙方无法及时获得政府相关部门的批准，导致乙方无法在该商铺对外营业，则装修免租期相应顺延，除此之外，甲方无需承担任何违约或赔偿责任。 </p>
+                <P>9.4乙方必须于甲方或商场运营管理方指定的时间内营业。乙方不得擅自停业，不得迟开早收。</p>
+                <P>9.5本合同有效期内，甲方有权调整本商场的营业时间，但甲方须提前15日邮件或短信方式通知乙方。乙方如需延长每日营业时间,
+                    应事先征得商场运营管理方的同意，并由运营管理方作出安排，根据实际经营情况支付相应超时经营所产生的费用（包括但不限于能耗，人工费用等）。</p>
+                <P>9.6乙方须于全年每日之营业时间内开铺营业。未经甲方书面许可, 乙方不得在营业时间内不进行业务经营(即指公众人士未能正常光顾乙方经营的业务)、撤离营业人员及商品。</p>
+                <P>9.7乙方营业所需人员由乙方自行聘用，乙方营业人员须遵守甲方制定的《租户手册》等管理公约。乙方营业人员之薪资福利由乙方自行负责。乙方有义务保证其营业额的真实性，并且有义务：</p>
+                <div style="padding-left: 2em;">
+                    <P>9.7.1于每日营业结束后之次日12时前将该日营业额据实上报甲方；</p>
+                    <P>9.7.2将有关营业额的资料完整、准确和真实地保存在该商铺内或甲方同意的其它地点，并应保存至少二年；</p>
+                    <P>9.7.3同意甲方或甲方授权人有权随时查核有关营业额的资料并进行复印，并有权随时对乙方在该商铺内经营活动的情况及营业额进行查核。</p>
+                </div>
+                <P>9.8甲方有权自主决定变更本商场名称， 但甲方应在本商场名称正式变更前30日书面通知乙方。甲方对乙方可能因本商场名称变更而产生的损失不承担责任。</p>
+
+                <P>9.9 甲方举行整体宣传、促销和庆典活动时，乙方应全力配合并承担相应费用，具体金额届时由双方另行协商。</p>
+                <P>9.10乙方不得在该商铺经营本合同约定的租赁用途以外的用途。</p>
+                <P>9.11乙方在该商铺内进行的营业活动，应遵守中国法律法规、行政规章、部门条例以及政府颁布的相关规范性文件。如乙方收到任何政府机关关于该商铺或该商铺任何设施的通知，乙方须立即书面通知甲方。</p>
+                <P> 9.12乙方不得从事任何形式的不正当竞争行为,
+                    乙方的任何促销活动或其他商业活动必须事先将具体方案提交甲方审核，经甲方同意后方可实施。如乙方的促销行为或其他商业活动妨碍他人正常营业活动的,甲方有权予以制止，并有权责令乙方做出相应的补救措施。</p>
+            </div>
+        </div>
+      
+        <div class="indent2">
+            <p class="bold">10.商铺的出入</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+
+                <p>10.1
+                    甲方出于该商铺的维修、保养、卫生、安全、防火或人员救护等目的，经事先联系乙方后，可进入该商铺进行检查或采取适当措施。但如遇紧急情况，事先无法与乙方取得联系时，甲方可直接进入该商铺并采取相应的必要措施，事后再与乙方取得联系并说明情况。
+                </p>
+                <p>10.2乙方理解并同意，甲方有权在租赁期限届满前6个月内的任何合理时间内陪同潜在的新租户进入该商铺看房。甲方应尽量减少对乙方正常营业的影响。</p>
+
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">11.商铺返还时的状态</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+
+                <p>11.1乙方返还该商铺时，应自费使该商铺恢复至本合同附件三约定的交付标准或甲方届时书面认可的状态。</p>
+                <P>11.2乙方返还该商铺时，甲乙双方应同时到场，经甲方验收认可，并相互结清各自应当承担的费用。如甲方发现该商铺未按照交付时之状态或者甲方书面认可的状态返还予甲方的，或者发现乙方还有应向甲方支付的租金、物业管理费、违约金或其他任何费用的，则甲方有权要求乙方赔偿或支付一切损失及费用，并可从租赁保证金中扣除。如租赁保证金不足赔偿甲方损失的，甲方有权向乙方追偿；同时，甲方享有对该商铺内乙方一切物品的留置权，有权禁止乙方自该商铺迁出任何物品。
+                </P>
+                <P>11.3租赁期限届满，甲方有权收回该商铺，乙方须于租赁期限届满之前的10日内，与甲方联系该商铺返还事宜，并于5日内完成该商铺返还。甲方有权保留乙方遗留的不可移动的添附物或移动后价值受损的添附物的所有权，以本合同终止时甲方向乙方发出的书面通知为准。
+                </P>
+                <P>11.4本合同提前终止，如果乙方未能于10日内办理该商铺返还手续并将该商铺按照本合同约定返还甲方的（包括甲方无法与乙方成功取得联系的情形等），甲方有权停止该商铺的公用事业（包括但不限于水、电、煤气等）和中央空调供应，有权阻止乙方进入和使用该商铺，有权在乙方不在场的情况下自行进入该商铺并对商铺内之任何物品（包括但不限于装修、设施设备等）进行处置，包括拍卖、变卖等方式，并以处置上述物品之所得扣除甲方所有费用后无息返还乙方；不足扣除的部分，甲方有权向乙方追偿。
+                </P>
+                <P>11.5
+                    租赁期届满或本合同提前终止，乙方应确保于本合同终止之日起的30日内将其以该商铺为注册地址的各类证书执照予以注销或变更（包括但不限于工商税务登记注册、煤气过户、租赁合同登记备案等），并将上述注销或变更证明的复印件提交甲方备案。若乙方在本合同约定时间内怠于办理注销或变更手续的，经甲方催告后仍不办理的，则每逾期一日乙方须按照该商铺当时日租金标准的5倍向甲方支付该商铺逾期占用费。
+                </P>
+
+
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">12.转租、转让和交换</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>12.1本合同有效期内，乙方不得转租该商铺整体或者任何部分，除非事先征得甲方书面同意。转租指乙方将该商铺交付第三人使用、收益，由第三人向乙方支付租金的行为，包括以联营、承包经营和合作经营等名义，将该商铺交付给第三人使用，不参与经营且获得租金性收益等。
+                </P>
+            
+                <P>12.2本合同有效期内，乙方无权将该商铺之承租权转让予他人或与他人承租的商铺进行交换，除非事先征得甲方书面同意。</P>
+                <P>12.3本合同有效期内，如果本商场发生整体或部分出租权转让的，乙方放弃得到甲方事先通知的权利，且乙方承诺届时无条件配合签署出租权主体变更的相关协议，乙方无条件同意由受让方取代甲方作为本合同出租人。甲方在转让前应当将租赁保证金在按照本合同约定作出扣除（如有）后的剩余部分转交予受让方，由该受让方重新向乙方开具租赁保证金收据（甲方原向乙方开具的租赁保证金收据由乙方向甲方返还），并由该受让方与乙方继续履行本合同。此后甲方不再就本合同享有权利，也不再承担本合同约定的义务。
+                </P>
+
+
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">13.解除本合同的条件</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>13.1甲乙双方同意，有下列情形之一的，本合同终止，双方互不承担违约责任：</P>
+                <div style="padding-left: 2em;">
+                    <p>13.1.1该商铺占用范围内的土地使用权依法提前收回。</P>
+                    <P>13.1.2该商铺因社会公共利益被依法征用。</P>
+                    <P>13.1.3该商铺因城市建设需要被依法列入房屋拆迁许可范围。</P>
+                    <P>13.1.4该商铺毁损、灭失或者被鉴定为危险房屋（双方有过错除外）。</P>
+                    <P>13.1.5 发生不可抗力导致该商铺无法继续正常使用。</P>
+                    <P>13.1.6甲方对于该商铺合法对外出租的权利到期或自然终止。</P>
+                    <P>13.1.7由任何第三方或者不可归因于甲方的原因而导致甲方对于该商铺合法对外出租的权利提前到期或者提前终止。</P>
+                </div>
+                <P>13.2甲乙双方同意，有下列情形之一的，守约方有权书面通知违约方解除本合同，本合同立即终止。违约方应向守约方按租赁期限内月平均租金和月物业管理费总和的3倍支付违约金；给守约方造成损失的，支付的违约金不足抵付守约方损失的，还应赔偿造成的损失与违约金的差额部分：
+                </P>
+                <div style="padding-left: 2em;">
+                    <P>13.2.1甲方超出本合同约定的交付宽限期仍未将该商铺交付给乙方，且经乙方书面催告后15个工作日内仍未交付。</P>
+                    <P>13.2.2甲方交付的该商铺存在重大缺陷、危及乙方安全，不能实现租赁目的。</P>
+                    <P>13.2.3本合同有效期内，非本合同约定的情况，甲方擅自解除本合同。</P>
+                    <P>13.2.4本合同有效期内，非本合同约定的情况，乙方擅自解除本合同。</P>
+                    <P>13.2.5乙方未征得甲方同意擅自改变该商铺用途的或用于任何非法目的。</P>
+                    <P>13.2.6因乙方原因改变该商铺主体结构或造成该商铺主体结构损坏。</P>
+                    <P>13.2.7乙方擅自转租该商铺、转让该商铺承租权或与他人承租的商铺进行交换。</P>
+                    <P>13.2.8乙方未于该商铺书面交付通知所载的商铺交付日期前来办理或者办理完毕该商铺的交付手续，逾期超过15日。</P>
+                    <P>13.2.9乙方在办理商铺交付手续后不进场装修，逾期超过15日。</P>
+                    <P>13.2.10乙方逾期缴付租赁保证金、租金、物业管理费以及本合同约定的应由乙方支付的任何一项费用连续超过15日或者累计超过30日。</P>
+                    <P>13.2.11乙方未及时补足租赁保证金，逾期超过15日。</P>
+                    <P>13.2.12如果乙方未能于装修免租期届满之次日（即租金起算日）或者本合同约定的其他开业日期在该商铺对外营业,逾期超过15日。</P>
+                
+                    <P>13.2.13在未经甲方书面许可的情况下，乙方擅自停止营业连续超过3日或者累计超过7日，或者乙方擅自迟开早收连续超过15次或者累计超过30次。</P>
+                    <P>13.2.14如果甲乙双方约定的租金计算方式中包含营业额提成（扣点）的方式，则乙方拒开、漏开或短开收银单据、虚报营业额以及发生其他破坏营业额真实性的行为累计达3次（含）或以上。</P>
+                    <P>13.2.15乙方违反本合同的约定，且在甲方书面通知后或本合同约定的期限内，乙方未予以纠正超过15日。</P>
+                    <P>13.2.16乙方破产或进行清算程序(经甲方同意，因重组或合并原因进行清算者例外)。</P>
+                    <P>13.2.17该商铺内乙方财产或乙方的任何财物因法庭强制执行其判决而被查封。</P>
+                    <P>13.2.18乙方经工商行政管理部门核准的营业执照因经营期限到期或其它原因导致无效。</P>
+                    <P>13.2.19乙方对该商铺的使用产生了噪音、辐射、低频、视觉、光等不符合环保法规和政府要求的污染被投诉并被查处.</P>
+                    <P>13.2.20乙方使用商铺进行违反中国法律、法规的规定及公序良俗和社会普遍道德观及社会习俗、习惯的活动，经甲方书面通知而未及时整改的。</P>
+                    <P>13.2.21其他归因于乙方，法律法规允许甲方解除本合同并收回该商铺的情形。</P>
+                    <P>13.2.22甲乙双方一致确认：如果由可归因于甲方的原因导致本合同提前终止的，且乙方的损失（包括但不限于装修、物品等）超出上述违约金标准的，则甲方应就上述乙方损失与上述违约金的差额部分承担赔偿或补偿责任，但最高限额为租赁期内该商铺平均月租金标准的3倍。
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">14.违约责任</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>14.1逾期交房的违约责任：甲方超出本合同约定的交付宽限期仍未将该商铺交付给乙方，则每逾期一日，甲方应按照当时日租金的2倍向乙方支付违约金。</P>
+                <P>14.2未经许可擅自装修的违约责任：乙方未征得甲方书面同意或者超出甲方书面同意的范围和要求装修商铺或者增设附属设施的，甲方可以要求乙方恢复商铺原状并赔偿损失。</P>
+                <P>14.3逾期收房的违约责任：乙方未于该商铺交付通知所载的交付日期前来办理或者办理完毕该商铺的交付手续，则每逾期一日，乙方应按照当时日租金的2倍向甲方支付违约金。</P>
+                <P>14.4逾期进场装修的违约责任：乙方未于商铺交付之日进场装修，则每逾期一日，乙方应按照当时日租金的2倍向甲方支付违约金。</P>
+                <P>14.5逾期支付相应费用的违约责任：乙方逾期支付租赁保证金、租金、物业管理费、公用事业费用以及本合同约定的应由乙方支付的任何一项费用，则每逾期一日，乙方应按欠付费用总额的3％向甲方支付违约金；逾期累计超过10日，甲方有权采取停止公用事业供应（包括但不限于水、电、中央空调、煤气等）以及阻止乙方进入和使用该商铺等措施，因此造成的一切后果由乙方自行承担。
+                </P>
+                <P>14.6逾期补足租赁保证金的违约责任：乙方未按照本合同约定及时补足租赁保证金的，每逾期一日，应按欠补足金额的3％支付违约金。</P>
+                <P>14.7未如期开始营业的违约责任：如果乙方未能于装修免租期届满之次日（即租金起算日）或者本合同约定的其他开业日期开始营业，则每逾期一日，应按照当时日租金的2倍向甲方支付违约金。</P>
+              
+                <P>14.8擅自停业或迟开早收的违约责任：如果乙方擅自停业或不按甲方规定的正常整体营业时间营业、迟开早收，则每天或每次乙方须向甲方支付相当于当时日租金的2倍的违约金。</P>
+                <P>14.9延迟返还商铺的违约责任：如果乙方延迟办理商铺返还手续，则自本合同终止之日起至该商铺返还甲方为止，每逾期一日，乙方须按照当时日租金的5倍向甲方支付违约金。</P>
+                <P>14.10延迟注销或变更证照的违约责任：如果乙方拒绝或延迟将其已注册在该商铺的各类证书执照予以注销或变更，并将上述注销或变更之证明提交甲方备案，则每逾期一日，应按照当时日租金的2倍向甲方支付违约金。
+                </P>
+                <P>14.11如乙方违反本合同其他约定并经甲方书面通知后乙方仍未予纠正的，每逾期一日，乙方须按照当时日租金的2倍向甲方支付违约金。</P>
+
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">15.豁免条款</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+
+                <P>15.1甲乙双方确认，在下述情况下，甲方不承担任何责任，且本合同项下之租金及其它费用不得减免或中止支付：</P>
+                <div style="padding-left: 2em;">
+                    <P>15.1.1本合同有效期内，该商铺的水、电、煤气、通讯及其他服务非因甲方原因停止供应或该商场的任何公共设施非因甲方原因停止运作。</P>
+                    <P>15.1.2由于乙方的原因对乙方自身或第三方、或者由于第三者的原因对乙方造成的任何损失和伤害。</P>
+                    <P>15.1.3因甲方改建、改造该商铺所在项目的任何部分，造成部分公共区域不能使用，导致甲方所提供的服务水准暂时下降的。</P>
+                </div>
+                <P>15.2乙方在此声明，除非下列任何情形是因甲方的过错直接引起的，甲方在下列任何情形下不必对乙方或任何其它人士负责，乙方应直接与造成损害的直接责任方交涉：</P>
+                <div style="padding-left: 2em;">
+                    <P>15.2.1该商铺内的任何部分因防火、保安设备、空气调节设备或其它设备的任何缺陷或故障，或因电力、自来水、煤气、电话等供应的失效、故障、暂停，或因有水、烟、火、有害气体或任何其它物质泄漏，或因老鼠、白蚁、蟑螂、其它害虫的滋生，或因遭受爆炸、盗窃、抢劫，或因其它损害，而对乙方或任何其它人士造成的任何个人或财物上的损失或破坏。
+                    </P>
+                    <P>15.2.2如上述情况是因甲方的过错直接引起的，甲方应在法律规定和本合同约定的责任范围内赔偿乙方因此而遭受的直接经济损失。</P>
+                </div>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">16.不可抗力</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+
+                <P>16.1本合同所述之不可抗力，指于本合同生效日之后发生的，双方无法预见，或即使已预见但不可避免并无法克服，导致受影响方在本合同下的协议全部或部分不能履行的事件。此类事件包括但不限于：战争、国家紧急情况、大规模流行性疾病、干旱、台风或其他自然灾害、交通灾难、停工或其他形式的劳工行动、恐怖活动、民政或军事部门的要求或规定、或阻碍本合同目的实现的法律上的变化。
+                </P>
+                <P>16.2如果任何一方由于不可抗力而未能履行其在本合同项下的义务，该方无需就另一方的损失向另一方承担违约责任，但不采取适当措施致使损失扩大的部分除外。</P>
+                <P>16.3受不可抗力事件影响的一方应立即将不可抗力事件书面通知对方，提供该不可抗力事件的情况描述和政府有关部门出具的证据，并解释其不履行本合同义务的原因。</P>
+                <P>16.4 履行义务的恢复</P>
+               
+                <div style="padding-left: 2em;">
+                    <P>16.4.1受不可抗力事件影响的一方应及时向对方通知相关进展，并采取必要的行动防止、限制或减轻因其暂停本合同履行而造成的的损失，并尽力避免、减轻或消除该不可抗力事件的影响。</P>
+                    <P>16.4.2受不可抗力事件影响的一方应在合理时间内尽快恢复履行义务。</P>
+                </div>
+
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">17.保险</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+
+                <P>17.1甲方所投保之保险仅限于以甲方所属的房屋及其附属设施设备为投保标的，并以甲方为受益人。如发生任何保险事故，有关保险公司在该保险单证项下所作之赔偿均归甲方所有。乙方无权以该保险事故造成其财产损失或人身伤害为由要求分享由有关保险公司支付并归甲方所有的保险赔偿金。
+                </P>
+                <P>17.2本合同有效期内，甲方建议乙方应当为乙方所属的装修和财产以及乙方的经营行为购买保险，且应保持相关上述保险在租赁期内持续有效，并且乙方应将上述保险单的复印件提交甲方备案。由于乙方不购买上述保险，则乙方须自行承担相关保险事故造成的损失，甲方不承担任何责任和费用。
+                </P>
+                <div style="padding-left: 2em;">
+                    <P>17.2.1装修免租期间，乙方应当为该商铺的装修和财产投保建筑工程一切险及相关财产险，所投保的建筑工程一切险(含第三者责任险)必须满足以下条件：<br />
+                        （1）以甲方、乙方和工程承包商及其分包商为共同被保险人；<br />
+                        （2）保险期限必须和装修免租期一致；<br />
+                        （3）保单中的物质损失部分的投保金额不低于装修工程的总价；<br />
+                        （4）保单中的第三者责任险的投保金额须符合甲方的要求，每次事故的赔偿限额应不低于下表的要求：<br />
+                        建筑面积 每次事故赔偿限额(不低于)<br />
+                        100㎡以下 人民币500,000.00<br />
+                        100㎡—300㎡ 人民币1,000,000.00<br />
+                        300㎡以上 人民币3,000,000.00 </P>
+                    <P>17.2.2经营期间，乙方应当为其在该商铺的经营行为投保以下保险：<br />
+                        （1）以甲方和乙方为共同被保险人的公众责任险；<br />
+                        （2）乙方应当为其在该商铺内的自有财产和其他物件投保财产险；<br />
+                        （3）乙方应为其雇员购买法定的保险；<br />
+                        （4）建议乙方就其营业收益投保相关的利润损失险或营业中断险；<br />
+                        （5）保单中的第三者责任险的投保金额须符合甲方的要求，每次事故的赔偿限额应不低于下表的要求：<br />
+                        建筑面积 每次事故赔偿限额(不低于)<br />
+                        100㎡以下 人民币500,000.00<br />
+                        100㎡-300㎡ 人民币1,000,000.00<br />
+                        300㎡以上 人民币3,000,000.00</P>
+                </div>
+            </div>
+        </div>
+      
+        <div class="indent2">
+            <p class="bold">18.税费</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>18.1甲方和乙方各自承担本合同的律师费以及按照法律规定各自承担与本合同有关的印花税、租赁登记备案费(如有)等。</p>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">19.权利的放弃、部分有效和非排他性补救</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <p>19.1若甲方了解到乙方违约而又接受租金，并不影响甲方继续追究乙方违约责任的权利。乙方交付的租金或其他款项不足本合同之规定金额，或甲方接受金额不足的租金或其他款项，均不能视为甲方同意乙方少付租金或其他款项，也不影响甲方追索欠租欠款以及根据本合同及法律规定的其他权利。此外，甲方未能或延迟行使本合同项下的任何权利将不意味放弃该等权利。甲方的任何权利的放弃均以甲方签署的书面明确表示为准。
+                </p>
+                <p>19.2如本合同的任何条款无效或不合法，不影响本合同其他条款的效力。</p>
+                <p>19.3本合同约定的甲方和乙方各自的权利和补救措施，并不影响各方根据法律规定所应有之权利和补救措施。当一方违约，另一方可行使或采取根据本合同或法律所应有的所有权利和补救措施，直至其损失得到足够的赔偿。
+                </p>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="indent2">
+            <p class="bold">20.送达</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>20.1以下所列为甲乙双方的有效联系方式。任何一方在收到另一方发出的变更下列联系方式的书面通知之前，该方的联系方式仍以下列所载为准：</P>
+                <div style="padding-left: 2em;">
+                    <p class="bold">
+                        甲 方：<span input-edit index="124" id="124" class="input-comm special" len="300" title="出租方名称"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >联系地址：
+                        <span input-edit index="125" id="125" class="input-comm special" len="300" title="出租方联系地址"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >电&nbsp;&nbsp;话：
+                        <span input-edit index="126" id="126" class="input-comm special" len="300" title="出租方电话"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >电子邮件：
+                        <span input-edit index="127" id="127" class="input-comm special" len="300" title="出租方电子邮件"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                </div>
+                <br />
+                <div style="padding-left: 2em;">
+                    <p class="bold">
+                        乙 方：<span input-edit index="128" id="128" class="input-comm special" len="300" title="承租方名称"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >联系地址：
+                        <span input-edit index="129" id="129" class="input-comm special" len="300" title="承租方联系地址"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >邮&nbsp;&nbsp;编：
+                        <span input-edit index="130" id="130" class="input-comm special" len="300" title="承租方邮编"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >电&nbsp;&nbsp;话：
+                        <span input-edit index="131" id="131" class="input-comm special" len="300" title="承租方电话"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                    <p >电子邮件：
+                        <span input-edit index="132" id="132" class="input-comm special" len="300" title="承租方电子邮件"
+                            style="min-width:300px;">&nbsp;&nbsp;</span>
+                    </p>
+                </div>
+                <P>20.2本合同一方向对方送达的任何通知，如为当面交付，在当面签收后即视为送达；如为快递，在投放快递之次日即视为送达；如为挂号信邮寄，在寄出3个工作日后视为送达；如为电子邮件、短信或相关即时通讯软件方式送达，则上述通知到达对方服务器即视为送达。
+                </P>
+                <P>20.3 任何一方均负有就双方履行本合同过程中发生的重要事项及时通知对方的告知义务。</P>
+                <P>20.4任何一方的上述联系方式如发生变更的，需及时书面通知对方。</P>
+            </div>
+        </div>
+      
+        <div class="indent2">
+            <p class="bold">21.其他条款</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P>21.1本合同自甲乙双方签署之日起生效。</P>
+                <P>21.2本合同未尽事宜，经甲乙双方协商一致，可订立补充合同。本合同及附件均为本合同不可分割的一部分。</P>
+                <P>21.3甲乙双方在履行本合同过程中发生争议，应通过协商解决；协商解决不成的，任何一方均可依法向该商铺所在地人民法院提起诉讼，败诉方需承担包括胜诉方律师费在内的一切诉讼费用。</P>
+                <P>21.4本合同连同附件一式肆份，甲乙双方各执贰份，均具有同等法律效力。</P>
+            </div>
+        </div>
+        <div class="indent2">
+            <p class="bold">22.特别条款</p>
+            <div style="padding-left: 2em;text-indent: -2em;margin-left: 2em;">
+                <P class="bold">22.1承租方主体变更：</P>
+                <div style="padding-left: 2em">
+                    <P>22.1.1甲乙双方确认，签署本合同时乙方作为投资者（股东）正在或即将进行该商铺的新经营主体（名称待定，以该商场作为经营场所）的设立申办，但尚未完成上述新经营主体的设立。</P>
+                    <P>22.1.2待甲乙双方签署本合同之后且乙方完成了上述新经营主体的设立并营业执照、税务登记证、企业组织机构代码证（如有）的复印件提交甲方备案后，甲方、乙方和上述新经营主体三方将签署《补充协议》就承租方主体变更事项作出书面约定。
+                    </P>
+                    <P>22.1.3自该《补充协议》生效之日起，本合同中有关承租方的权利义务概括由乙方转让于上述新经营主体，由该新经营主体继受乙方于本合同中的承租方主体地位，乙方与上述新经营主体就本合同承担连带责任。
+                    </P>
+                </div>
+                <P class="bold">22.2商场开业条款：</P>
+                <div style="padding-left: 2em">
+                    <P>22.2.1甲方告知乙方：本商场的试营业日期暂定为<span input-edit index="153" id="153" class="input-comm" len="100" title="试营业年份">&nbsp;/&nbsp;</span>年<span input-edit index="154" id="154" class="input-comm" len="100" title="试营业月份">&nbsp;/&nbsp;</span>月<span input-edit index="155" id="155" class="input-comm" len="100" title="试营业年份">&nbsp;/&nbsp;</span>日。甲方有权根据本商场各商铺的装修和开业筹备进度而调整上述暂定试营业日期并最终确定本商场的开业（包括试营业）日期。该日期由甲方最终决定，具体以甲方提前5日发出的书面开业通知为准。
+                    </P>
+                    <P>22.2.2乙方承诺：保证于本商场开业（包括试营业）之日或装修免租期届满之次日（两者以时间在先的为准）确保该商铺满足如下开业条件并开始对外营业：<br />
+                        （1）装修施工完成且经甲方验收合格，装修人员退场；<br />
+                        （2）所有与正常开业经营相关的货品、物品（包括但不限于所经营之商品、家具、内部陈设、餐具、厨房用具等所有与乙方营业相关的物品）到位；<br />
+                        （3）营业人员进场，且上岗培训完毕。</P>
+                    <P>22.2.3如果该商铺交付时本商场尚未开业（包括试营业）的，则乙方应于商铺交付日之当日缴纳装修免租期的装修管理费等其他相关费用（费用标准参见本合同附件二）。</P>
+                    <P>22.2.4租赁期限自动延长条款<br />
+                        如果该商铺交付时本商场尚未开业（包括试营业）的，则自该商铺交付之日至本商场开业（包括试营业）之前一日这一期间所对应的天数将作为租赁期限的延长，相应该商铺的租赁期限的截止日期自动调整为原有租赁期限截止日加上上述对应的延长天数。
+                    </P>
+                    <P>22.2.5 如果该商铺交付时本商场尚未开业（包括试营业）、但装修免租期届满时本商场已开业（包括试营业）的，则一律以上述装修免租期之次日作为该商铺租金起算日。</P>
+                 
+                    <P>22.2.6如果该商铺交付时本商场尚未开业（包括试营业）、且装修免租期届满时本商场仍未开业（包括试营业）的，则自该商铺装修免租期届满之次日起至本商场开业（包括试营业）之前一日这一期间视作乙方享有的装修免租期的自动延长。甲方免予向乙方收取上述期间的租金和物业管理费，但乙方仍须按照本合同约定标准缴付装修免租期的装修管理费等相关费用，且一律以本商场开业（包括试营业）之日作为该商铺租金起算日。甲方无需就本商场开业（包括试营业）日期超出该商铺的装修免租期而向乙方或任何第三方承担任何违约责任或赔偿责任，乙方对此表示谅解并承诺无权就此向甲方主张任何权利。
+                    </P>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <p class="bold">【签署】</p>
+        <br />
+        <div style="display:flex" >
+            <div style="width: 50%" class="bold">
+                <p>甲方：<span input-edit index="133" id="133" class="input-comm" len="200" title="出租方名称"
+                        style="min-width:300px;"></sapn>
+                </p>
+                <p>(盖章)</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p style="border-bottom: 4px solid #000; min-width: 100px;width: 50%"></p>
+                <br />
+                <P>法定/授权代表(签名)</P>
+                <P>&nbsp;&nbsp;年&nbsp;&nbsp; 月&nbsp;&nbsp; 日</P>
+            </div>
+            <div style="width: 50%" class="bold">
+                <p>乙方：<span input-edit index="134" id="134" class="input-comm" len="200" title="承租方名称"
+                        style="min-width:300px;"></sapn>
+                </p>
+                <p>(盖章)</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p style="border-bottom: 4px solid #000; min-width: 100px;width: 50%"></p>
+                <br />
+                <P>本人/法定/授权代表(签名)</P>
+                <P>&nbsp;&nbsp;年&nbsp;&nbsp; 月&nbsp;&nbsp; 日</P>
+            </div>
+        </div>
+        <p class="enclosure"></p>
+        <!-- <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /> -->
+        <!-- <div class="indent2">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;一</h2>
+            <div style="text-align: center;margin-bottom: 10px">该商铺平面图</div>
+            <p style="border-bottom:1px dashed #000;width: 300px;margin: 0 auto"></p>
+            <p style="display: flex;justify-content:space-between;width: 300px;margin: 0 auto;font-size: 12px">
+                <span>(粘贴处)&nbsp;&nbsp;</span>
+                <span>(骑缝章加盖处)&nbsp;&nbsp;</span>
+            </p>
+            <!-- <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /> -->
+        <!-- </div> -->
+      
+        <div class="indent2 enclosure">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;二</h2>
+            <div style="text-align: center;margin-bottom: 10px">商铺交付日乙方应缴费用</div>
+            <p style="border-bottom:1px dashed #000;width: 300px;margin: 0 auto"></p>
+            <p style="display: flex;justify-content:space-between;width: 300px;margin: 0 auto;font-size: 12px">
+                <span>(粘贴处)&nbsp;&nbsp;</span>
+                <span>(骑缝章加盖处)&nbsp;&nbsp;</span>
+            </p>
+            <p class="bold">乙方应于商铺交付日缴付的之主要费用及明细如下：</p>
+            <table class="ys-table" cellspacing="0" cellpadding="0">
+                <colgroup>
+                    <col width="19%">
+                    <col width="27%">
+                    <col width="27%">
+                    <col width="27%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>序号</th>
+                        <th>收费项目</th>
+                        <th>收费标准</th>
+                        <th>备注</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>装修免租期物业管理费</td>
+                        <td>商场开业前 25元/㎡/月；<br />
+                            商场开业后 38 元/㎡/月；
+                        </td>
+                        <td></td>
+                    </tr>
+                    <!-- <tr>
+                    <td rowspan="3">2</td>
+                    <td>装修用电</td>
+                    <td>1.25元/度</td>
+                    <td></td>                   
+                </tr> -->
+                    <tr>
+                        <td>2</td>
+                        <td>电费</td>
+                        <td>人民币<span class="input-comm" len="100" input-edit index="135" id="135" title="电费单价">&nbsp;&nbsp;</span>元/千瓦时</td>
+                        <td>按表计量</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>水费</td>
+                        <td>人民币<span class="input-comm" len="100" input-edit index="136" id="136" title="水费单价">&nbsp;&nbsp;</span>元/立方米</td>
+                        <td>按表计量</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>消防放水费</td>
+                        <td>人民币<span style="text-decoration:underline "> 800 </span>元/次/区域/层</td>
+                        <td>消防系统改造时，涉及消防管道放水的按照区域收费</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>消防设计施工及验收出证</td>
+                        <td>小于150㎡人民币不高于<span style="text-decoration:underline "> 20000
+                            </span>/户<br />大于150㎡人民币<span style="text-decoration:underline ">150</span>元/㎡</td>
+                        <td>由甲方指定消防单位</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>电话网络接入费</td>
+                        <td>人民币<span style="text-decoration:underline "> 400 </span>元/门</td>
+                        <td>乙方向甲方物业部申请</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>装修建筑垃圾清运费</td>
+                        <td>人民币<span style="text-decoration:underline "> 25 </span>元/平米（建筑面积），主力店另行商议</td>
+                        <td>一次性收取，不退还；仅限开业前，开业后按车计；</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>特殊装修垃圾清运费（凿地坪、铺大理石、单元外墙拆除）</td>
+                        <td>视具体情况，另行商议</td>
+                        <td>一次性收取，不退还</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>临时围挡</td>
+                        <td>人民币<span style="text-decoration:underline "> 100 </span>元/平米</td>
+                        <td>轻钢龙骨石膏板或细木工板等材质；<br />
+                            一次性收取，不退还
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>施工证工本费</td>
+                        <td>人民币<span style="text-decoration:underline "> 10 </span>元/张</td>
+                        <td>一次性收取，不退还</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>施工证押金</td>
+                        <td>人民币<span style="text-decoration:underline "> 50 </span>元/张</td>
+                        <td>乙方装修结束并经甲方验收合格后1个月内，甲方将上述押金一次性无息退还乙方</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>装修押金</td>
+                        <td>小于100㎡，<span style="text-decoration:underline "> 5000 </span>元；100㎡-500㎡，<br /><span
+                                style="text-decoration:underline "> 10000 </span>元；500-1000㎡,<span
+                                style="text-decoration:underline "> 20000 </span>元；大于<br />1000㎡，<span
+                                style="text-decoration:underline "> 40000 </span>元；</td>
+                        <td>乙方装修结束并经甲方验收合格后1个月内，甲方将上述押金一次性无息退还乙方</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>煤气押金</td>
+                        <td>6立方，人民币<span style="text-decoration:underline "> 5000 </span>元/户<br />10立方，人民币<span
+                                style="text-decoration:underline "> 10000 </span>元/户<br />16立方以上，人民币<span
+                                style="text-decoration:underline "> 20000 </span>元/户</td>
+                        <td>注销或完成转让，符合退款条件时一次性无息退还</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>电卡押金</td>
+                        <td>人民币<span style="text-decoration:underline "> 100 </span>元/张</td>
+                        <td>符合退款条件时一次性无息退还</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>其他</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <P>备注：如上述费用标准发生变动，或者如有其他物业费用（如甲方为乙方提供装修审图、现场监督、电梯运输、临时供电供水费等），一律以甲方书面确认为准。</P>
+        </div>
+        <!-- <br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /> -->
+       
+        
+        <div class="indent2">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;三</h2>
+            <div style="text-align: center;margin-bottom: 10px">交付标准</div>
+            <p style="border-bottom:1px dashed #000;width: 300px;margin: 0 auto"></p>
+            <p style="display: flex;justify-content:space-between;width: 300px;margin: 0 auto;font-size: 12px">
+                <span>(粘贴处)&nbsp;&nbsp;</span>
+                <span>(骑缝章加盖处)&nbsp;&nbsp;</span>
+            </p>
+        </div>
+        <table class="ys-table" cellspacing="0" cellpadding="0">
+            <colgroup>
+                <col width="5%">
+                <col width="18%">
+                <col width="5%">
+                <col width="20%">
+                <col width="26%">
+                <col width="26%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th colspan="4" style="text-align:left">商铺交付标准和施工界面（1F-4F）</th>
+                    <th colspan="2" style="text-align:left">时间：</th>
+                </tr>
+                <tr>
+                    <th colspan="6" style="text-align:left;background: #fff">现有装修、附属设施、设备状况、甲方同意乙方自行装修和增设附属设施及设备的约定。
+                    </th>
+                </tr>
+                <!-- <tr>
+                                <td rowspan="3">2</td>
+                                <td>装修用电</td>
+                                <td>1.25元/度</td>
+                                <td></td>                   
+                            </tr> -->
+                <tr>
+                    <td rowspan="20">建筑部分</td>
+                    <td>类别</td>
+                    <td colspan="2">配套标准</td>
+                    <td>甲方施工界面</td>
+                    <td>乙方施工界面</td>
+                </tr>
+                <tr>
+                    <td>项目总建筑面积</td>
+                    <td colspan="2">约㎡（地上：15512㎡）</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>建筑组合</td>
+                    <td colspan="2">地上四层</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>租赁范围</td>
+                    <td colspan="2">地上1至4层</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>楼层层高（楼板面至楼板面）</td>
+                    <td colspan="2">1F:6.5m；2F:5.5m；3F:5.5m;4F:5.5m</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>建筑结构</td>
+                    <td colspan="2">钢筋混凝土框架结构</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">1F-4F公共区域</td>
+                    <td>顶棚</td>
+                    <td>石膏板天花，开放式天花结合金属框架造型</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>墙面</td>
+                    <td>金属板墙面，砖墙护墙结合硅藻泥，砖墙</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>地面</td>
+                    <td>地砖，部分区域PVC地板</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>电梯</td>
+                    <td colspan="2">4部客梯（B1F-4F），2部货梯（B1F-4F）,6部自动扶梯（1F-4F）</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">楼梯间</td>
+                    <td>顶棚</td>
+                    <td>原顶</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>墙面</td>
+                    <td>原墙砖</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>地面</td>
+                    <td>原地砖</td>
+                    <td> / </td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>楼板荷载</td>
+                    <td colspan="2">1F-4F:6.0KN/㎡（楼板）、3.5KN/㎡（楼梯）</td>
+                    <td> / </td>
+                    <td>超出楼板荷载须事先得到甲方批准，且由乙方负责加固，费用由乙方承担</td>
+                </tr>
+                <tr>
+                    <td>建筑外立面装饰</td>
+                    <td colspan="2">增加户外广告牌，增加户外LED装饰，增加户外LOGO</td>
+                    <td> / </td>
+                    <td rowspan="5">1、乙方应自行安排二次装修，聘请有资质的施工单位进行施工。<br />
+                        2、乙方需遵守甲方提供的商场店铺设计标准。<br />
+                        3、乙方应自行负责店面、店招、广告的设计及制作，设计方案、招牌类型和材质必须先由甲方确认，取得甲方批准，并聘请有资质的施工单位方可进行施工，不得破坏公共区域外墙。<br />
+                        4、乙方按照甲方设置之地面分隔线及1F5m（2.6m以下）,2F、3F4m（3m以下），4F3.3m(2.6m以下)进行橱窗及玻璃门的安装施工，须满足消防要求（与公共走道交界的隔墙耐火极限1小时、疏散距离、疏散宽度等）。<br />
+                        5、乙方如有厨房或卫生间等亲水区域，需按规范做好防水，高压配电间上方全区域做防水。<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">出租区域</td>
+                    <td>顶棚</td>
+                    <td>暴露原结构顶面（以现场交付为准）</td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">墙体</td>
+                    <td>完成至砂浆找平层</td>
+                    <td>商铺之间的分隔墙用200mm厚轻质砌块到顶，满足1小时以上防火要求，完成至砂浆找平层</td>
+                </tr>
+                <tr>
+                    <td>门面/店招</td>
+                    <td>商铺与公共区域交界处由甲方设置地面分隔线；
+                        面向公共走道一侧门头上方统一装修，乙方不得擅自更改，以现场交付为准。
+                    </td>
+                </tr>
+                <tr>
+                    <td>地面</td>
+                    <td>以现场交付为准</td>
+                    <td>商户内完成砂浆找平层</td>
+                </tr>
+                <tr>
+                    <td>户外招牌</td>
+                    <td colspan="2">部分商户外墙预留相关户外招牌位置（以现场交付为准）</td>
+                    <td>仅限部分商铺</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td rowspan="12">机电部分</td>
+                    <td>消防设施</td>
+                    <td colspan="2">本工程喷淋、烟感、主泵房消防设施均利用原有，本次仅作喷淋、烟感末端移位；排烟风机基本利用原有，具体详见深化图纸；消防卷帘系统按照现有防火分区另设；</td>
+                    <td>商铺内消防喷淋、消防栓、烟感报警及消防排烟（部分）等安装到位。</td>
+                    <td>乙方调整或增加喷淋头、烟感探头、火警报警按钮位置或者改变室内分隔布局，须将设计图纸交甲方及政府部门审核批准，设计图纸呈交甲方指定的有资质的施工单位负责施工并承担相关费用，并经消防职能部门开业前检查合格。
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>强电</td>
+                    <td colspan="2">配电量：<span
+                            style="text-decoration:underline ">&nbsp;&nbsp;</span>kw【招商区域：2945KW;空调系统、消防系统、常规照明，插座系统、电梯系统均利用原有系统用电量】
+                    </td>
+                    <td>三相电缆入户，楼层强电井房为商铺提供独立插卡式电表计量，中岛区域配电箱、电缆；套内商铺电缆入户3m不设置配电箱；多经点位设置220V/380V电源插座。</td>
+                    <td>乙方负责提供和安装商铺内相关配电设备，并负责进行商铺的布线及配电装置;不得超过甲方设定的用电负荷，施工完成后接受甲方人员验收，确保三相平衡，无漏电。</td>
+                </tr>
+                <tr>
+
+                    <td>给水</td>
+                    <td colspan="2">管径：<span style="text-decoration:underline "> DN32 / DN40/50</span>mm（以现场交付为准）</td>
+                    <td>给水管道接入商铺（仅限部分商铺）内，设置水表、阀门(儿童教育配置给水与排水)。水管随主水管高度一致加装截止阀，不装水表（商户装修时甲方提供）。</td>
+                    <td rowspan="2">
+                        乙方负责商铺的给排水管道安装及接驳，设计图纸呈交甲方及政府部门审核确认并承担相关费用;乙方自行调整水表位置及高度，高度要求不高于1.6m、如需更改排水管道的位置，必须得到甲方的同意。</td>
+                </tr>
+                <tr>
+
+                    <td>生活污水</td>
+                    <td colspan="2">管径：<span style="text-decoration:underline "> DN150 </span>mm</td>
+                    <td>接入商铺内（仅限部分商铺，以现场交付为准）</td>
+                </tr>
+                <tr>
+
+                    <td>油废水</td>
+                    <td colspan="2">管径：<span style="text-decoration:underline "> DN </span>mm</td>
+                    <td>通至集中隔油池的接驳管接入商铺内（仅限部分餐饮商铺，以现场交付为准）。</td>
+                    <td>乙方负责在厨房内安装一级油污净化设备，厨房废水管道连接至集中隔油池接驳管前必须先装初级隔油箱和过滤挡板或过滤网，并承担相关费用，管道连接方案须经甲方审核批准。</td>
+                </tr>
+                <tr>
+
+                    <td>天然气</td>
+                    <td colspan="2">立方DN<span
+                            style="text-decoration:underline ">&nbsp;&nbsp;</span>m³（以现场交付为准）</td>
+                    <td>燃气管道接入商铺内（仅限部分餐饮商铺），管道口用堵头暂封。</td>
+                    <td>乙方自行向燃气公司申请并安装煤气表、管道、灶具，呈交甲方/政府部门审核确认并承担相关费用，由甲方指定或认可的有资质的施工单位负责施工、验收。</td>
+                </tr>
+                <tr>
+
+                    <td>排油烟系统</td>
+                    <td colspan="2">排油烟量：<span style="text-decoration:underline ">&nbsp;&nbsp;</span>m³/h
+                        （以现场交付为准）
+                    </td>
+                    <td>排油烟管道接入商铺内（仅限部分餐饮商铺），设置止回阀和VCD风阀，且防火阀安装到位。</td>
+                    <td>乙方负责厨房区域内集烟风罩带滤油功能（租赁面积超过300平方米以上的餐饮商户要求含紫外线净化装置）、排烟风机、油烟净化器安装、接驳，设计图纸呈交甲方指定的或认可的有资质的施工单位负责施工并承担相关费用。使用燃气的商户须在灶台上安装符合消防要求的灭火装置。
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>补风</td>
+                    <td colspan="2"> </td>
+                    <td>部分餐饮区域厨房设补风，补风量为排油烟风量的80%</td>
+                    <td>商户负责商户内补风管道的延长及设备的增配。装修前提交设计图纸交甲方审核。</td>
+                </tr>
+                <tr>
+                    <td>新风管道</td>
+                    <td colspan="2"> </td>
+                    <td>新风接至商场公共区域及商铺内（新风接驳口入二楼及三楼商铺），商铺接驳口设置VCD风阀。</td>
+                    <td>商户负责商户内新风系统的设备安装，装修前提交设计图纸交甲方审核。</td>
+                </tr>
+                <tr>
+                    <td>空调</td>
+                    <td colspan="2"> / </td>
+                    <td>商铺内接入空调供回水管回路及阀门（冷热水管进商户）</td>
+                    <td>乙方负责商铺内空调系统末端设备的增补和移位。装修前提交设计图纸交甲方审核。乙方自行增加水系统的风机盘管。</td>
+                </tr>
+                <tr>
+                    <td>电话线</td>
+                    <td colspan="2"> / </td>
+                    <td rowspan="2">光纤穿管接入商铺，教育可以配置双光纤进户。</td>
+                    <td rowspan="2"> </td>
+                </tr>
+                <tr>
+                    <td>网络线</td>
+                    <td colspan="2"> / </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <p style="border: 1px solid #000" class="enclosure">现场高配间上部须全面做防水</p>
+        <!-- <br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /> -->
+        <div class="enclosure">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;四</h2>
+            <div style="text-align: center;margin-bottom: 10px">商铺使用交接书（仅供商铺交付时签署）</div>
+            <p style="border-bottom:1px dashed #000;width: 300px;margin: 0 auto"></p>
+            <p style="display: flex;justify-content:space-between;width: 300px;margin: 0 auto;font-size: 12px">
+                <span>(粘贴处)&nbsp;&nbsp;</span>
+                <span>(骑缝章加盖处)&nbsp;&nbsp;</span>
+            </p>
+            <br />
+            <p>甲方：<span input-edit index="137" id="137" class="input-comm" len="200" title="出租方名称"
+                style="min-width:300px;"></sapn>
+            </p>
+            <p>乙方：<span input-edit index="138" id="138" class="input-comm" len="200" title="承租方名称"
+                style="min-width:300px;"></sapn>
+            </p>
+            <br />
+            <div>
+                <p style="text-indent:2em;">甲乙双方在此声明，甲方已于<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>月<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>日将坐落在<span class="input-comm" len="100" input-edit index="139" id="139" title="商场位置" style="min-width: 300px">&nbsp;&nbsp;</span>
+                    （推广名：乐坊<span class="input-comm" len="100" input-edit index="142" id="142" title="推广名">&nbsp;&nbsp;</span>）<span class="input-comm" len="100" input-edit index="143" id="143" title="商铺位置(层)">&nbsp;&nbsp;</span>层<span class="input-comm" len="100" input-edit index="144" id="144" title="商铺位置(室)">&nbsp;&nbsp;</span>室商铺交付乙方使用。</p>
+                <p style="text-indent:2em;">
+                    根据该商铺《租赁合同》约定：“该商铺租赁期限为<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年，自商铺交付日起开始计算届满<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年止”，即该商铺租赁期限为自<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>月<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>日起至<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>月<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>日止，除非甲乙双方另有补充协议就上述租赁期限进行书面变更约定。
+                </p>
+                <p style="text-indent:2em;">自上述交付之日起，乙方所享有的装修免租期正式开始计算，该商铺处于乙方控制之下，双方无需另行办理其他商铺交付手续。</p>
+                <p style="text-indent:2em;">本商铺使用交接书的签署作为甲方向乙方正式交付该商铺的标志。</p>
+                <p style="text-indent:2em;">本商铺使用交接书自甲、乙双方签署时生效。</p>
+                <p style="text-indent:2em;">本商铺使用交接书一式肆份，甲方、乙方各执贰份，具有相同法律效力。</p>
+            </div>
+            <br /><br />
+            <div>
+                <p class="bold">【签署】</p>
+                <p class="bold">甲方：<span input-edit index="145" id="145" class="input-comm" len="200" title="出租方名称"
+                    style="min-width:300px;"></sapn></p>
+                <p> 法定/授权代表人签署：</p>
+                <p>签署日期：<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>月<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>日</p>
+                <br />
+                <p class="bold">乙方：<span input-edit index="146" id="146" class="input-comm" len="200" title="承租方名称"
+                    style="min-width:300px;"></sapn></p>
+                <p>本人/法定/授权代表人签署：</p>
+                <p>签署日期：<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>月<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>日</p>
+
+            </div>
+            
+        </div>
+        <!-- <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /> -->
+        <!-- <div class="indent2">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;五</h2>
+            <div style="text-align: center;margin-bottom: 10px">空调外机位置及尺寸图</div>
+            <p style="border-bottom:1px dashed #000;width: 300px;margin: 0 auto"></p>
+            <p style="display: flex;justify-content:space-between;width: 300px;margin: 0 auto;font-size: 12px">
+                <span>(粘贴处)&nbsp;&nbsp;</span>
+                <span>(骑缝章加盖处)&nbsp;&nbsp;</span>
+            </p>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br />
+        </div> -->
+      
+        <!-- <div class="indent2">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;六</h2>
+            <div style="text-align: center;margin-bottom: 10px">甲乙双方证照（身份证明、营业执照、组织机构代码证、税务登记证复印件）</div>
+            <p style="border-bottom:1px dashed #000;width: 300px;margin: 0 auto"></p>
+            <p style="display: flex;justify-content:space-between;width: 300px;margin: 0 auto;font-size: 12px">
+                <span>(粘贴处)&nbsp;&nbsp;</span>
+                <span>(骑缝章加盖处)&nbsp;&nbsp;</span>
+            </p>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br />
+        </div> -->
+      
+        <div class="indent2 ">
+            <h2 style="text-align: center">附&nbsp;&nbsp;件&nbsp;&nbsp;七</h2>
+            <br />
+            <h2 style="text-align: center">承租人保证书</h2>
+            <br />
+            <h4>致：<span class="input-comm" len="100" input-edit index="147" id="147" title="出租方" style="min-width:300px;">&nbsp;&nbsp;</span>（出租方）</h4>
+            <br />
+            <h4>有关：“乐坊<span class="input-comm" len="100" input-edit index="148" id="148" title="项目名称">&nbsp;&nbsp;</span>项目（推广名：乐坊<span class="input-comm" len="100" input-edit index="149" id="149" title="推广名">&nbsp;&nbsp;</span>）<br />
+                <span class="input-comm" len="100" input-edit index="150" id="150" title="商铺位置(层)">&nbsp;&nbsp;</span>层<span class="input-comm" len="100" input-edit index="151" id="151" title="商铺位置(室)">&nbsp;&nbsp;</span>室商铺”
+            </h4>
+            <p style="text-indent:2em">本人/本公司为上述商铺之承租方，为维护及促进本项目商场管理，本人/本公司确认已收到出租方提供的<span
+                    class="bold">《商场管理守则》、&nbsp;&nbsp;</span><span class="bold">《用户手册》、&nbsp;&nbsp;</span><span
+                    class="bold">《商铺装修守则》&nbsp;&nbsp;</span>，并同意遵守上述三套文件内的条款及有关修订。同时承诺按《商铺租赁合同》之约定交付一切有关费用。</p>
+            <br />
+            <p style="text-indent:2em">如本人/本公司有违反上述文件内行为，违约责任将由本人/本公司承担。</p>
+            <br />
+            <div >
+                <p class="bold">承租方：<span input-edit index="152" id="152" class="input-comm" len="200" title="承租方名称"
+                    style="min-width:300px;"></sapn></p>
+                <p>本人/法定/授权代表人签署：</p>
+                <p>签署日期：<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>年<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>月<span style="text-decoration:underline; ">&nbsp;&nbsp;</span>日</p>
+            </div>
+            <br /><br />
+        </div>
+    </div>
+</body>
+<script>
+    // var img = new Image();
+    // img.src = '../chart/images/logo_le.jpg';
+    // img.onload = () => {
+    //     // 准备canvas环境
+    //     var canvas = document.getElementById("myCanvas");
+    //     var ctx = canvas.getContext("2d");
+    //     // 先把图片绘制到canvas上
+    //     ctx.drawImage(img, 0, 0, 200, 100);
+    //     // 绘制水印到canvas上
+    //     for (let i = 0; i < 20; i++) {
+    //         ctx.rotate((-30 * Math.PI) / 180); // 水印初始偏转角度
+    //         ctx.font = "20px microsoft yahei";
+    //         ctx.fillStyle = "rgba(0,0,0,0.2)";
+    //         ctx.fillText("乐坊乐坊乐坊乐坊乐坊乐坊", -60, i * 26);
+    //         ctx.rotate((30 * Math.PI) / 180); // 把水印偏转角度调整为原来的，防止一直转
+    //     }
+    // }
+</script>
+
+</html>

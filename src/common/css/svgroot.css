@@ -1,0 +1,371 @@
+/*============================== #ys-enrolment-project common  ============================== */
+#ys-floor-ichnography{
+
+}
+
+/* ys-floor-ichnography-summary */
+#ys-floor-ichnography .ys-floor-ichnography-summary{
+    /*padding-top:22px;*/
+    line-height:44px;
+}
+#ys-floor-ichnography .ys-floor-ichnography-summary span{
+    margin-right:10px;
+}
+
+#ys-floor-ichnography .ys-floor-ichnography-summary span em{
+    margin: 0 4px;
+}
+
+#ys-floor-ichnography .ys-button-group .tab{
+    display: block;
+    height: 32px;
+    line-height: 30px;
+    color: #757575;
+    text-decoration: none;
+    float: left;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#ys-floor-ichnography .ys-button-group .tab+.tab {
+    margin-left:-1px;
+}
+#ys-floor-ichnography .ys-button-group .tab.active {
+    background-color: #808c92;
+    color: #fff;
+    border-color: #808c92;
+}
+
+/* ======================================== 左边图层区域 ======================================== */
+#ys-floor-ichnography .ys-content>.ys-content-left{
+    position:relative;
+    width:836px;
+    border-right:1px solid #ccc;
+}
+
+/*#ys-floor-ichnography .ys-content>.ys-content-left:before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: block;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right:16px solid #ccc;
+}*/
+
+/*#ys-floor-ichnography .ys-content>.ys-content-left:after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: -2px;
+    display: block;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right:16px solid #fff;
+}*/
+
+/* ys-toolbar */
+#ys-floor-ichnography .ys-toolbar{
+    padding:64px 20px 20px;
+}
+#ys-floor-ichnography #project_select_btn .ys-search-wrapper {
+    padding:10px 15px;
+}
+#ys-floor-ichnography #project_select_btn .ys-search-wrapper .ys-search {
+    width:100%;
+}
+/* ys-graphy */
+#ys-floor-ichnography .ys-graphy{
+    height:530px;
+    padding-top:30px;
+    padding-left: 30px;
+    border-bottom: 1px solid #ddd;
+    border-left:none;
+}
+#ys-floor-ichnography .scale_btn_group {
+    position:absolute;
+    right:0;
+    top:0;
+    width:40px;
+    line-height: 40px;
+    font-size:30px;
+    text-align: center;
+}
+#ys-floor-ichnography .scale_btn_group div {
+    height:40px;
+    width:100%;
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    background-color:#F8FAFA;
+    cursor:pointer; 
+}
+/*#ys-floor-ichnography .scale_btn_group div:hover {
+    box-shadow:0px 0px 10px black inset;
+}*/
+#ys-floor-ichnography ul#legend-panel>li {
+    box-shadow: none;
+    border:none;
+    background-color:#F8FAFA;
+}
+#ys-floor-ichnography ul#legend-panel>li em.ys-icon-legend {
+    border-radius:50%;
+}
+
+/* ys-commercial-types */
+#ys-floor-ichnography .ys-commercial-types{
+    padding-top:20px;
+    padding-bottom:250px;
+    text-align: center;
+}
+#ys-floor-ichnography .ys-commercial-types ul{
+    display:inline-block;
+    padding:0;
+    margin:auto;
+}
+#ys-floor-ichnography .ys-commercial-types ul li{
+    float:left;
+    font-size:14px;
+    padding-right:20px;
+}
+
+#ys-floor-ichnography .ys-commercial-types ul li:before{
+    content:"";
+    display:inline-block;
+    width:16px;
+    height:16px;
+    vertical-align: sub;
+    margin-right:10px;
+}
+
+#ys-floor-ichnography .ys-commercial-types ul li.ys-supermarket:before{background-color:#f1ddbd;}
+#ys-floor-ichnography .ys-commercial-types ul li.ys-address:before{background-color:#feacd0;}
+#ys-floor-ichnography .ys-commercial-types ul li.ys-support:before{background-color:#b56e00;}
+#ys-floor-ichnography .ys-commercial-types ul li.ys-repast:before{background-color:#ffe701;}
+#ys-floor-ichnography .ys-commercial-types ul li.ys-non-sign:before{background-color:#a4b6bd;}
+
+
+/* ======================================== 右边图层区域 ======================================== */
+#ys-floor-ichnography .ys-content>.ys-content-right{
+    width:40%;
+    padding:20px;
+    max-height:540px;
+    overflow-y: auto;
+}
+
+/* ys-search-bar-grey */
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-search-bar-grey{
+    padding-bottom:40px;
+}
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-search-bar-grey input{
+    width:300px;
+}
+
+/* ys-blank-block */
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-blank-block{
+    text-align: center;
+}
+
+/* ys-fixed-point-position */
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position{display:none;}
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position .ys-icon.ys-icon-location{
+    vertical-align: middle;
+    margin-right:16px;
+}
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position .ys-view-history:hover{
+    text-decoration: underline;
+}
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position ul.ys-fixed-pointer-position-info{
+    padding:30px 0 0 15px;
+    margin:0;
+}
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position ul.ys-fixed-pointer-position-info li{
+    width:50%;
+    float:left;
+    margin-bottom:15px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position  .ys-fixed-pointer-position-statement{
+    padding:0 0 0 15px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position  .ys-fixed-pointer-position-statement>div{
+    height:30px;
+    line-height: 30px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position  .ys-fixed-pointer-position-statement>div span{
+    display:inline-block;
+    width:80px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-fixed-point-position  .ys-fixed-pointer-position-statement>div a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+
+/* ys-store-info */
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info .ys-icon.ys-icon-location{
+    vertical-align: middle;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info ul.ys-store-info-basic{
+    padding:30px 0 0 15px;
+    margin:0;
+}
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info ul.ys-store-info-basic li{
+    width:50%;
+    float:left;
+    margin-bottom:15px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info  .ys-store-info-statement{
+    padding:0 0 0 15px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info  .ys-store-info-statement>div{
+    height:30px;
+    line-height: 30px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info  .ys-store-info-statement>div span{
+    display:inline-block;
+    margin-right:10px;
+}
+
+#ys-floor-ichnography .ys-content>.ys-content-right .ys-store-info  .ys-store-info-statement>div a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#ys-floor-ichnography .glyphicon.glyphicon-info-sign{
+    position:relative;
+    cursor:pointer;
+}
+
+#ys-floor-ichnography .glyphicon.glyphicon-info-sign:hover .ys-tooltip{
+    display:block;
+}
+#ys-floor-ichnography .glyphicon.glyphicon-info-sign .ys-tooltip{
+    position:absolute;
+    left:0;
+    top:0;
+    display: none;
+    width:150px;
+    color:#222;
+    border:1px solid #ccc;
+    background-color:#fff;
+    padding:10px;
+}
+
+/* ys-search-result */
+#ys-floor-ichnography .ys-content-right .ys-search-result{display:none;}
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-statement{
+    padding:20px 0 20px 10px;
+}
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-wrapper{
+    position:relative;
+    height:200px;
+    overflow: hidden;
+}
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list{
+    position:absolute;
+    width:100%;
+    padding:0;
+    margin:0;
+    transition:top 0.5s;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li{
+    height:82px;
+    padding:20px 10px 0 10px;
+    border-top:1px solid #eaeaea;
+    border-bottom:1px solid #eaeaea;
+}
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li:last-child{
+    border-top:none;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li:first-child{
+    border-top:1px solid #eaeaea;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li:hover,
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li.active{
+    background-color:#f3f3f3;
+    cursor: pointer;
+}
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li>div:first-child em{
+    vertical-align: top;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li>div:last-child{
+    height:30px;
+    line-height:30px;
+    padding-left:30px;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result ul.ys-search-result-list li>div:last-child em{
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #ccc;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+/* ys-search-result-detail */
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail{
+    display:none;
+    position:absolute;
+    top:82px;
+    background-color:#fff;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail ul.ys-store-info-basic{
+    padding:10px 0 0 15px;
+    margin:0;
+}
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail ul.ys-store-info-basic li{
+    width:50%;
+    float:left;
+    margin-bottom:15px;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail  .ys-store-info-statement{
+    padding:0 0 0 15px;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail  .ys-store-info-statement>div{
+    height:30px;
+    line-height: 30px;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail  .ys-store-info-statement>div span{
+    display:inline-block;
+    margin-right:10px;
+}
+
+#ys-floor-ichnography .ys-content-right .ys-search-result .ys-search-result-detail  .ys-store-info-statement>div a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+#ys-floor-ichnography .ys-tooltip div{
+    padding-top: 3px;
+}
+ .ys-font-weight-bold {
+    font-weight: bold;
+}
+
+ .ys-font-size-36 {
+    font-size: 36px!important;
+}
+ .ys-font-size-18 {
+    font-size: 18px!important;
+}
+.ys-icon-location {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../images/floor/location_index.png);
+}

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="770" height="457" id="svg2" version="1.1" inkscape:version="0.47pre4 " sodipodi:docname="test.svg" style="display:inline" stroke="#000000">
+<defs id="defs4">
+<inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" id="perspective10" />
+<inkscape:perspective id="perspective2832" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d" />
+<script type="text/ecmascript" id="script6">
+		var fdat="",sdat="";
+		function onAreaOver(evt){
+			var ele=evt.target; 
+			fdat=ele.getAttribute('fill'); 
+			sdat=ele.getAttribute('stroke');
+			ele.setAttribute('fill','#006fb6');//多边形填充颜色
+			ele.setAttribute('stroke','#006fb6');//stroke 多边形 边框颜色
+			
+		}
+		function onAreaOut(evt){
+			var ele=evt.target; 
+			ele.setAttribute('fill',fdat);
+			ele.setAttribute('stroke',sdat);
+		}
+		</script>
+<symbol overflow="visible" id="symbol" style="overflow:visible">
+<path d="m 626,156 2,-2 2,-4 0,-3 -1,-3 -4,-3 -6,-3 -5,-2 -4,-2 -4,8 -6,14" id="path9" style="fill:#000000;stroke:none" />
+</symbol>
+</defs>
+<sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="5.6" inkscape:cx="583.1007" inkscape:cy="273.63795" inkscape:document-units="px" inkscape:current-layer="svg2" showgrid="false" inkscape:window-width="1280" inkscape:window-height="740" inkscape:window-x="-4" inkscape:window-y="-4" inkscape:window-maximized="1" />
+<metadata id="metadata7">
+<rdf:RDF>
+<cc:Work>
+<dc:format>
+image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+<dc:title>
+</dc:title>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<polygon id="4116" points="11.7 185.1,66.19999 185.1,66.19999 205.5,103.7 205.4,103.8 191.9,121.5 191.8,121.6 205.5,187.6 205.5,187.6 346.4,100.4 346.6,100.4 354.5,95.89999 354.6,95.79999 358.7999,100.5 358.7999,100.3 365.5,65.79999 365.2,65.79999 360.2,11.7 360.1" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4117" points="187.6 205.5,266.2 205.3,266.3 213.6,251.8 213.6,251.9 228.8,266.4 228.8,266.2 235.9,273.5 235.9,273.6 314.7,295.6 314.5999,295.5 337.0999,274.6 336.9999,275 383.9999,288.4 383.8999,288.5 390.5999,295.5 390.5999,295.4 403.5999,11.9 403.5,11.5 359.8,65.99998 360,65.99999 365.2,100.4 365.2,100.4 359,95.79999 359,95.79999 354.6,100.3 354.6999,100.2 346.4,187.6 346.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4001" points="75.19999 87.29999,82.99999 87.49998,102 125.5,100.9 126.3,100.7 162,100.2 162,99.99999 175.7,70.49999 175.8,70.59999 181.9,55.59999 181.7,55.5 185.2,32.8 185.1,32.8 117.2,56.19999 103.4,55.3 102.1,60 95.79999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4002" points="83.49999 88.49999,108.7 76.39999,109.4 74.8,127.3 113.9,102.1 125.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4003" points="109.5 74.89999,114.7 68.7,127.8 62.9,137.1 63.7,137 64.99999,152.7 102.5,127.3 113.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4005" points="147.2 60.3,193.3 44.59999,205 84.19999,165.7 97.59998,159.1 82.89999,151.9 65.59999,149.7 66.49998" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4006" points="193.3 44.59999,220.9 36.99999,250 30.2,258.3 70.79999,205 84.09999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4007" points="250 30.2,271.5 26.1,295.6 22.6,297.7 40.39999,300.1 63.79999,285.3 66.2,258.4 70.89999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4008" points="298.4 47.09999,305.4 46.2,307.2 62.89999,300.0999 63.79999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4009" points="308.6 20.9,336.6 18.2,338.7 16.5,341.7 59.69999,313.4 62" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4010-1" points="338.7 16.4,345.8 11,354.4 6.499999,364.0999 3.699999,373.4 2.199999,383.8 1.599999,393.4999 1.999999,402.4 3.499999,406.4 5.200001,405.3 58,384.4 57.8,362.4 58.39999,341.7 59.59999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4010-B" points="406 5.200001,412.4 7.799996,421.2 12.8,429.2 18.4,424.8 59.39999,405.2 57.99999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4010-C" points="429.2 18.49999,457.0999 20.7,452.3999 61.89999,424.5 59.29999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4011" points="459.6 46.4,471.9 47.6,469.8999 64.09999,457.5 62.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4012" points="460.7 22.1,492.2 25.9,507.2 28.7,499.8 69.39999,473.7 65.09998,477.7999 37.2,459.3999 34.59999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4013-A" points="507 29,544.7001 37.2,534.7999 77.49998,500.0999 69.29999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4023-B" points="544.5999 37.19999,580.9999 46.8,568.7999 86.60001,534.8 77.39996" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4014" points="580.9 46.7,594.9 51.69999,618.9 60.79998,605.6 99.69998,568.7999 86.49998" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4015" points="617.0001 87.59998,628.3 92.49998,622.2 106.3,611.2999 101.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4016" points="622.1 62.19998,627.5999 63.79999,637.1999 63,650.9 68.49999,657.4 76.09999,682.4 88.79999,663.9999 125.6,623.8999 107,634.6 82.89998,617.0001 75.49998" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4017" points="682.7999 87.19999,690.7999 87.29999,705.8999 95.49999,710.6999 102.4,710.0999 103.5,733.1999 117.1,733.2999 185.1,695.4999 185,695.5999 175.8,665.5999 175.8,665.2999 162.5,664.9999 161.9,665.0999 126.3,663.9999 125.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4115" points="121.6 184.1,131.8 184.1,131.8 205.5,121.4 205.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4114" points="131.8 184.1,143 184.2,142.7 205.4,131.8 205.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4113" points="143 184.1,153.5 184.1,153.2 203.3,142.8 203.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4112" points="153.5 184.1,163.7 184.1,163.8 203.2,153.2 203.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4111" points="163.7 184,175.3 184,175.1 205.5,163.8 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4110" points="175.3 183.9,186.6 183.9,186.5 205.4,175.1 205.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4109" points="186.5 184,208.3 184,208.3 205.4,186.5 205.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4108" points="208.4 183.9,219.3 183.9,219.4 205.3,208.3 205.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4107" points="219.3 183.9,230.1 183.9,230.1 205.3,219.5 205.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4106" points="230.1 183.8,240.9 183.8,240.8 202.3,230.2 202.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4105" points="241 183.8,251.8 183.8,251.8 202.5,240.9 202.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4104" points="251.7 183.8,262.9 183.8,262.8 205.2,251.7 205.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4103" points="262.9 184,274.2 184,274.1 206.6,266.2 206.6,266.1 205.5,262.7 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4102" points="274.2 185.4,284.5 185.4,284.6 206.6,274 206.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4101" points="284.5 185.4,306.9 185.4,306.8 206.7,284.6 206.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4100" points="290.3 213.9,307 213.9,306.9 229.1,290.2 228.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4099" points="273.6 235.8,306.8 235.8,306.7 250.7,273.5 250.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4098" points="273.6 250.5,306.8 250.5,306.9 261.4,273.6 261.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4097" points="273.6 261,306.9 261.3,306.9 271.8,273.6 271.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4096" points="273.6 271.6,307 271.8,306.9 282.9,273.7 282.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4095" points="273.6 282.8,307 282.8999,306.8 294.1,273.6 293.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4094" points="273.7 293.8999,307 294,306.7 304,273.7 303.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4093" points="273.6 303.7,306.8 304,306.9 314.5,273.8 314.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4092" points="274.6 336.9,306.6 337.2,306.9 346.5,295.8 346.7,295.9 348.3,281.8 348.2,281.5 352.8,274.8 352.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="1160-3" points="499.6 205.5,602.2999 205.5,602.2999 184,623.2 184,623.4 189.7,644.5999 189.5,644.5999 184.1,662.5999 184,662.4999 205.3,665.3999 205.3,665.5999 214.4,674.0999 214.2,674.2 210.9,687.9999 210.9,688.1999 214.1,695.8999 214,696.0999 206.7,710.4999 206.5,710.5999 184.8,753.9 185.1,753.9999 403.4,470.5 403.3,470.4 385.0999,491.5 385.2,491.4 352.0999,484.3 352.2,484.3 347.9,470.6 347.9,470.3 314.5999,492.5 314.5999,492.0999 235.8,500.0999 235.8,500.1 228.7,513.9999 228.8,514.4 213.8,499.6 213.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4084" points="459.2 303.8,492.4 303.9,492.5999 314.5,459.0999 314.5999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4083" points="459.3 293.7,492.4 293.7,492.4 303.8999,459.0999 303.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4082" points="459.3 283,492.3 282.9999,492.4 293.5999,459.2 293.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4081" points="459.2 271.8,492.4 271.6,492.4 282.9,459.4 283" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4080" points="459.2 261.1,492.3 261,492.4 271.7,459.2 271.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4079" points="459.4 250.3,492.3 250.1,492.3 261,459.2 261" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4078" points="459.4 236,492.0999 235.9,492.2 250.1,459.4 250.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4077" points="459.0999 213.9,476 213.9,476.0999 228.7,459.4 228.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4076" points="459.3 185.6,481.5 185.4,481.5 206.4,459.4 206.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4075" points="481.4999 185.5,491.8 185.5,491.8 201.4,481.4 201.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4074" points="491.8 184.1,502.8 184.1,502.7 205.5,491.8 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4073" points="502.7 184.1,513.7999 184,513.4999 205.4,502.6 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4072" points="513.7999 184.1,524.4999 184.1,524.4999 205.5,513.4999 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4071" points="524.4 184.1,535.7 184.1,535.6 205.5,524.4 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4070" points="535.5999 184.2,546.2 184.2,545.9999 202.5,535.7 202.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4069" points="546.0999 184.2,557.4 184.2,557.2 202.4,545.9999 202.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4068" points="557.2999 184.2,567.9999 184.2,568.0999 205.5,556.9999 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4067" points="567.9999 184.1,578.9999 184.1,578.9999 205.5,568.0999 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4066" points="578.9999 184.1,590.4 184.1,590.4 205.5,578.9999 205.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4065" points="590.4 184,602.3999 183.9,602.2999 205.5,590.2999 205.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4034" points="137 149.2,155.3 141,164.5 162.5,164.4 169.1,141 168.6,134.3 163.9,132.8 155.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4033" points="155.3 141,166.3 136.5,172.8 152.9,161.1 154.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4032" points="166.4 136.5,178.5 131.8,185.9 151.3,172.8 152.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4035" points="161.1 154.4,172.9 152.7,186.9 151.2,186.8 169,164.4 169,164.5 162.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4031" points="185.9 151.4,198.2 149.4,190.6 127.4,178.5 131.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4036" points="186.8 151.2,198.3 149.4,197.9 169.1,186.8 168.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4030" points="190.5 127.5,203.1 123.3,211.2 147.3,198.3 149.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4037" points="198.4 149.2,208.9 147.8,208.8 168.9,197.9 169" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4038" points="209 147.8,223.7 145.8,228.7 162.1,228.8 168.9,208.9 168.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4029" points="203.1 123.2,215.6 119.3,223.7 145.8,211.2 147.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4028" points="215.6 119.2,240.7 112.3,247.5 138.6,223.8 145.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4039" points="223.8 145.6,235.8 142,243 168.8,228.8 168.7,228.7 161.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4040" points="235.8 142,247.6 138.6,254.3 165.7,243 168.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4027" points="249.5 110,265.7 106.6,269.6 126.8,254.4 130.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4026" points="265.8 106.6,280.7 103.6,282.5 115.1,267.9 117.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4041" points="256.2 136.9,271.3 133.7,276.9 160.8,262.8 163.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4042" points="271.2 133.8,284.7 131.1,289.4 158.5,277 160.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4043" points="284.7 131,297.7 128.9,301.7 155.9,289.4 158.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4025" points="293.5 101.7,317.9 98.49998,321 126,297.7 129.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4044" points="297.9 129.2,309.8 127.5,313.3 154.3,301.7 155.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4045" points="309.9 127.5,321.1 126,324.1 153.2,313.4 154.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4024" points="317.8999 98.39999,370.0999 94.79999,370.8 122.8,346.0999 123.6,333.4999 124.8,321.0999 125.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4046" points="321.0999 125.8,333.5999 124.9,336.0999 151.9,324.2 153.1" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4047" points="333.5999 124.9,346.0999 123.6,347.8999 150.7,336.0999 151.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4048" points="346.0999 123.6,358.7 123.1,359.8999 150.4,347.9999 150.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4049" points="358.7 123,370.8999 122.7,371.3999 149.9,359.8999 150.3" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4023" points="395.9 94.59999,437.0999 97.19998,436.2 107.6,420.3999 106.4,419.8001 112.8,422.5999 112.8,421.8 120.2,395.0999 118.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4050" points="395.3 122.7,407.4 123.2,406.2 150.3,394.3 149.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4051" points="407.5 123.2,420.2 123.9,418.2 150.9,406.0999 150.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4022" points="447.8 98.69998,472.8 101.9,468.3 129,444.5 126.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4052" points="420.2 123.6,432.6 125,430 151.9,418.3 150.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4053" points="432.7 125,444.9 126.4,441.8 153.3,430.1 151.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4054" points="444.9 126.4,456.3 127.7,452.4 154.5,441.7 153.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4055" points="456.3 127.6,468.5999 129.1,464.1 156.2,452.4 154.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4021" points="485.4 103.7,500.3 106.5,497.8 117.7,483.3 115.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4020" points="500.2 106.5,516.4 110.2,511.4 130.1,495.8 126.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4056" points="468.5999 129,481.4 131.4,476.5999 158.1,464.0999 156.2" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4057" points="481.3 131.4,494.7 133.6,488.9999 160.6,476.4999 157.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4058" points="494.7 133.7,509.9 136.9,503.5999 163.5,489.0999 160.4" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4019" points="525.2 112.3,549.2999 118.9,575.2999 127.5,567.4999 149.4,542.4999 145.8,518.2999 138.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4059" points="518.3999 138.7,530.3999 142.3,523.0999 168.9,511.7 165.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4060" points="530.4999 142.3,542.3999 145.9,536.7999 164,536.8999 169.1,523.2 168.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4061" points="542.4999 145.9,557.3999 147.9,557.0999 168.8,536.8999 169,536.7999 164.1" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4062" points="557.3999 147.9,568.2 149.5,568.2999 168.8,557.0999 168.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4063" points="568.1999 149.6,578.7999 151,578.8999 168.8,568.3999 168.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4064" points="578.7999 151.1,604.7999 154.3,601.3999 162.3,601.4999 168.8,578.8999 168.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4018" points="610.4999 141.3,629.5999 150.2,632.9 155.6,632.9999 161,630.0999 165.7,625.8999 168.7,601.4 168.8,601.2999 162.1,604.7999 154.3,578.6999 151,567.4999 149.3,575.2999 127.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4004" points="156.9 83.69999,159.1 82.79998,165.7 97.69999,160.7 99.59999,157.7 92.59999,158.5 92.3,156.7 88.49998,158.4 87.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4091" points="317.3 337,339.3 336.9999,339.4999 360,317.0999 359.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4090" points="339.1 336.9,359.0999 336.9,358.9999 360.2999,339.0999 360" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4089A" points="358.6999 336.8,371.6 336.8999,371.6 403.5,317.2 403.4,317.1 359.8,358.8 360.1" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4089B" points="371.5999 337,383.5999 337,383.5999 359.5999,437.5999 359.8,437.4 370.5999,448.8 370.6,448.8 403.4,371.4 403.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4089" points="382.9 336.8999,404.8 337.0999,404.5 359.8999,383.1 359.6" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4088" points="404.5 337.0999,426.5 337.0999,426.5 359.8999,404.5 359.6999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4087" points="426.4 337.0999,448.5999 337.1,448.8 359.9999,426.3999 359.8999" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" xmlns="http://www.w3.org/2000/svg" />
+<polygon id="4086" points="437 359.8999,449 359.9999,448.7 370.9,437.2 370.7" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+<polygon id="4085" points="463 337.4,470.4 337.2,470.6 344.8,463 344.5" fill="#FFFFFF" stroke="#000000" stroke-width="0.25" />
+
+</svg>

@@ -1,0 +1,954 @@
+html,body{
+    min-width:1060px;
+    font-family: 'PingFang SC', 'Helvetica Neue', "STHeitiSC-Light", "Microsoft YaHei", sans-serif;
+}
+
+body{
+   padding-top:0;
+    position: relative;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+/*==========reset==========*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, em, i, b, pre {
+    font-style: normal;
+}
+
+a {
+    cursor: pointer;
+    color: #2d7ae4;
+}
+
+a:hover {
+    color: #2a64c7;
+}
+
+:focus {
+    outline: none;
+}
+
+button.close {
+    font-weight: normal;
+    font-size: 26px;
+}
+
+textarea {
+    resize: none;
+}
+
+.input-group textarea{
+    border:solid 1px #d8e0e7;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+/*CSS input type="number"出现上下箭头时解决方案*/
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* s-d */
+#preloader { position: fixed; /*display:none;*/ top: 0; left: 0; width: 100%; height: 100%; background-color: #e4e7ea; z-index: 10000; }
+#status {
+    width: 36px; height: 36px; position: absolute; left: 50%; top: 50%; line-height: 0;
+    margin: -18px 0 0 -18px; font-size: 36px; color:#757575;}
+
+
+/*==========ys-block==========*/
+/*==========ys-page > ys-block > ys-section > ys-panel==========*/
+.ys-page{
+    padding-bottom:20px;
+}
+.ys-page.ys-fixed-toolbar{padding-top:72px;}
+
+.ys-page.ys-fixed-toolbar .ys-toolbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+    z-index: 998;
+    background-color: rgba(255,255,255,.88);
+}
+
+.ys-page .ys-content-header{
+
+}
+.ys-page .ys-content{
+    padding:0 20px;
+}
+
+.ys-block{
+    position:relative;
+}
+.ys-block .ys-block-title{
+    padding:15px;
+}
+.ys-block .ys-block-content{
+    padding:15px;
+}
+
+
+
+.ys-section{
+    padding:0;
+    margin-bottom:15px;
+}
+.ys-section-no-padding{
+    padding:0;
+}
+.ys-section .ys-section-title{
+    padding:10px 0;
+}
+.ys-section .ys-section-content{}
+
+.ys-section.ys-section-tab{
+    margin-bottom:0;
+}
+.ys-section.ys-section-tab .nav-tabs{border-bottom:0;}
+.ys-section.ys-section-tab .nav-tabs>li>a{
+    margin-right: 10px;
+    min-width:80px;
+    padding: 0 10px;
+    line-height: 32px;
+    text-align:center;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+
+    background-color:#e8edf1;
+    color:#8b97a7;
+
+}
+
+.ys-section.ys-section-tab .nav-tabs>li.active>a{
+    background-color:#32aaff;
+    color:#fff;
+}
+
+/* ======================================== ys-block-title */
+.ys-block-title>h3 {
+    display: inline-block;
+    padding-left: 8px;
+    border-left: solid 4px #32aaff;
+    font-size: 16px;
+    color: #222;
+    height: 18px;
+    line-height: 18px;
+}
+/*ys-block-title ======================================== */
+
+.ys-panel{
+}
+/*==========ys content header & breadcrumb==========*/
+.ys-content-header{
+    position: fixed;
+    z-index:999;
+    top:0;
+    left:0;
+    margin:auto;
+    padding-left:20px;
+    padding-right:20px;
+    height:44px;
+    width:100%;
+    overflow: hidden;
+    background-color: #f3f4f8;
+    }
+.ys-content-header .breadcrumb{
+    float:left;
+    margin:0;
+    margin-right:20px;
+    padding:0;
+    height:44px;
+    line-height:44px;
+    border:0;
+    color:#8592a2;
+    background-color: inherit;}
+
+.ys-content-header .breadcrumb > li + li:before{
+    float:left;
+    padding-left:6px;
+    padding-right:8px;
+    color:#8592a2;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    -webkit-font-smoothing: antialiased;
+    content:"\e258";
+}
+
+.ys-content-header .breadcrumb > li a{
+    text-decoration: none;
+    color:#737e8c;
+}
+
+.ys-content-header .breadcrumb > li a:hover{
+    color:#32aaff;
+}
+
+/*==========ys-head-function=========*/
+.ys-head-function{
+
+}
+.ys-dist-links{line-height: 44px;}
+.ys-dist-links>a{display: inline-block;padding:12px 0;height:44px;line-height: 20px;color:#999;}
+.ys-dist-links>a+a{margin-left:12px;}
+.ys-dist-links>a:hover{color: #E64E4D;}
+.ys-dist-links>a .ys-icon{float:left;height:20px;margin-right:6px;}
+
+/*==========ys-btn==========*/
+/*btn reset*/
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+   /* outline: 5px auto -webkit-focus-ring-color;*/
+    outline:none;
+    outline-offset: -2px;
+}
+.ys-btn{
+    display: inline-block;
+    padding: 0 15px;
+    min-width: 80px;
+    height: 32px;
+    line-height: 30px;
+    border: solid 1px #d8e0e7;
+    border-radius:0;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ys-btn:hover,.ys-btn:focus,.ys-btn:active{
+    text-decoration: none!important;
+    outline:none;
+}
+
+.ys-btn-inline{
+    padding: 0 8px;
+    height: 26px;
+    font-size: 12.8px;
+    line-height: 24px;
+}
+
+.ys-btn-s{
+    min-width: 40px;
+}
+.ys-btn-m{
+    min-width:86px;
+}
+
+.ys-btn-default{
+    color:#333;
+    background-color:#fff;
+}
+
+.ys-btn-default:hover{
+    color:#333;
+    background-color:#eaeaea;
+}
+
+.ys-btn-disable{
+    color:#999;
+    background-color:#e6e6e6;
+    cursor:not-allowed;
+}
+
+.ys-btn-grey{
+    color:#fff;
+    background-color:#808c92;
+    border-color:#808c92;
+}
+.ys-btn-grey:hover{
+    color:#fff;
+    background-color:#818384;
+}
+.ys-btn-grey-reverse{
+    color:#808c92;
+    background-color:#fff;
+    border-color:#808c92;
+}
+
+.ys-btn-warn{
+    color:#e64e4d;
+}
+.ys-btn-warn:hover{
+    color:#e64e4d;
+    border:solid 1px #e64e4d;
+    background-color:#fff;
+}
+
+
+.ys-btn-red,
+.ys-btn.active{
+    background-color:#e64e4d;
+    color:#fff;
+    border-color:#e64e4d;
+}
+.ys-btn-red-reverse{
+    background-color:#fff;
+    color:#e64e4d;
+    border-color:#e64e4d;
+}
+
+.ys-btn-red:hover,.ys-btn-red:focus,.ys-btn-red:active,
+.ys-btn-red:hover:active,
+.ys-btn-red:hover:focus,
+.ys-btn-red:active:focus,
+.ys-btn.active:hover,
+.ys-btn.active:focus,
+.ys-btn.active.focus,
+.ys-btn.active:active,
+.ys-btn.active:hover:active,
+.ys-btn.active:hover:focus,
+.ys-btn.active:active:focus
+{
+    background-color:#AC3838;
+    color:#fff;
+    border-color:#AC3838;
+}
+
+
+.ys-btn-red-reverse:hover,
+.ys-btn-red-reverse:focus,
+.ys-btn-red-reverse:active,
+.ys-btn-red-reverse:hover:active,
+.ys-btn-red-reverse:hover:focus,
+.ys-btn-red-reverse:active:focus
+{
+    background-color:#fff;
+    color:#AC3838;
+    border-color:#AC3838;
+}
+
+/* ys-btn-blue */
+.ys-btn-blue{
+    background-color:#32aaff;
+    color:#fff;
+    border-color:#32aaff;
+}
+
+.ys-btn-blue-reverse{
+    background-color:#fff;
+    color:#32aaff;
+    border-color:#32aaff;
+}
+
+.ys-btn-blue:hover,
+.ys-btn-blue:focus,
+.ys-btn-blue:active,
+.ys-btn-blue:hover:active,
+.ys-btn-blue:hover:focus,
+.ys-btn-blue:active:focus {
+    background-color:#0f96ff;
+    color:#fff;
+    border-color:#0f96ff;
+}
+
+.ys-btn-blue-reverse:hover,
+.ys-btn-blue-reverse:focus,
+.ys-btn-blue-reverse:active,
+.ys-btn-blue-reverse:hover:active,
+.ys-btn-blue-reverse:hover:focus,
+.ys-btn-blue-reverse:active:focus {
+    background-color:#fff;
+    color:#0f96ff;
+    border-color:#0f96ff;
+}
+
+.ys-btn-load{  }
+.ys-btn-load>i.fa-spin{
+    display: none;
+}
+.ys-btn-load>span{display: inline-block;}
+.ys-btn-load.loading{ }
+.ys-btn-load.loading>span{display: none;}
+.ys-btn-load.loading>i.fa-spin{display: inline-block;}
+/*ys-text-btn*/
+.ys-text-btn{
+    display: block;
+    font-size:14px;
+    color:#32aaff;
+}
+.ys-text-btn.pull-left{margin-left:15px;}
+.ys-text-btn:hover{
+    color:#0f96ff;
+}
+
+.ys-text-btn>em.glyphicon{
+    position: relative;
+    top:2px;
+}
+
+/*ys-icon-btn*/
+.ys-icon-btn{
+    display: block;
+    width:25px;
+    height:25px;
+    background-image:url(../../images/icons/icon.png);
+   /* background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;*/
+    cursor:pointer;
+}
+.ys-icon-btn-del{
+    background-position:-28px -136px
+}
+/*==========ys-btn-group==========*/
+/*group为表现上分组，wrapper为结构上分组*/
+.ys-btn-group{
+
+}
+.ys-btn-wrapper{
+
+}
+.ys-btn-wrapper .ys-btn{float:left;}
+.ys-btn-wrapper .ys-btn+.ys-btn{margin-left:10px;}
+/*==========ys-form==========*/
+.ys-form{
+
+}
+/*reset*/
+.form-control{
+    padding:5px 15px;
+    height:32px;
+    border-radius: 0;
+    box-shadow: none;
+    border: solid 1px #d8e0e7;
+}
+
+/*==========ys-table==========*/
+.ys-table{
+
+}
+/*==========fake radio checkbox==========*/
+.ys-fake-radio,
+.ys-fake-checkbox{
+    position: relative;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    top:3px;
+    cursor:pointer;
+}
+.ys-fake-radio:after,
+.ys-fake-checkbox:after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../images/common/checkbox_blue.png);
+    background-position: 0 0;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    content: " ";
+}
+.ys-fake-radio:after{
+    background-position: -326px 0;
+}
+.ys-fake-radio:hover:after{
+    background-position: -366px 0;
+}
+
+.ys-fake-checkbox:after{
+    background-position: -201px 0;
+}
+.ys-fake-checkbox:hover:after{
+    background-position: -261px 0;
+}
+
+.ys-fake-radio.disabled:after{
+    background-position: -326px 0;
+    cursor:not-allowed;
+}
+.ys-fake-radio.checked:after{
+    background-position: -346px 0;
+}
+.ys-fake-radio.disabled.checked:after{
+    /*background-position: -386px 0;*/
+    cursor:not-allowed;
+}
+
+
+.ys-fake-checkbox.disabled:after{
+    background-position: -201px 0;
+    cursor:not-allowed;
+}
+.ys-fake-checkbox.checked:after{
+    background-position: -240px 0;
+}
+
+.ys-fake-checkbox.disabled.checked:after{
+    /*background-position: -281px 0;*/
+    cursor:not-allowed;
+}
+
+.raido-wrapper label,
+.checkbox-wrapper label{
+    margin-bottom:0;
+    height:32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #666;
+    font-weight:normal;
+    cursor: pointer;
+}
+
+.raido-wrapper label>.ys-fake-radio,
+.checkbox-wrapper label>.ys-fake-checkbox{
+    float:left;
+    margin-right:5px;
+    top:0;
+    height:32px;
+}
+
+/*==========radio checkbox==========*/
+.input-addon {
+    position: relative;
+    /* width: 100%;*/
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.input-addon>input {
+    position: absolute;
+    left: -2000px;
+    opacity: 0;
+}
+
+.input-addon>label,
+.input-addon>.ys-label {
+    display: block;
+    position: relative;
+    padding-left: 22px;
+    height: 20px;
+    margin-right:10px;
+    line-height: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.input-addon>input[disabled]+label{
+    color:#999;
+    cursor:not-allowed;
+}
+
+.input-addon>label:before,
+.input-addon>.ys-label:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../images/common/checkbox_blue.png);
+    background-position: 0 0;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    content: " ";
+}
+
+.input-checkbox-addon>label:before,
+.input-checkbox-addon>.ys-label:before {
+    background-position: -201px 0;
+}
+
+.input-checkbox-addon>label:hover:before,
+.input-checkbox-addon>.ys-label:hover:before{
+    background-position: -261px 0;
+}
+
+.input-radio-addon>label:before,
+.input-radio-addon>.ys-label:before {
+    background-position: -326px 0;
+}
+
+.input-radio-addon>label:hover:before,
+.input-radio-addon>.ys-label:hover:before {
+    background-position: -366px 0;
+}
+
+.input-checkbox-addon>input[disabled]+ label:before,
+.input-checkbox-addon>input[disabled]+ .ys-label:before {
+    background-position: -201px 0;
+    cursor:not-allowed;
+}
+
+
+.input-checkbox-addon>input:checked+ label:before,
+.input-checkbox-addon>input:checked+ .ys-label:before {
+    background-position: -240px 0;
+}
+
+
+.input-checkbox-addon>input[disabled]:checked+ label:before,
+.input-checkbox-addon>input[disabled]:checked+ .ys-label:before {
+    /*background-position: -281px 0;*/
+    cursor:not-allowed;
+}
+
+
+.input-radio-addon>input[disabled]+ label:before,
+.input-radio-addon>input[disabled]+ .ys-label:before {
+    background-position: -326px 0;
+    cursor:not-allowed;
+}
+
+
+.input-radio-addon>input:checked+ label:before,
+.input-radio-addon>input:checked+ .ys-label:before {
+    background-position: -346px 0;
+}
+
+.input-radio-addon>input[disabled]:checked+ label:before,
+.input-radio-addon>input[disabled]:checked+ .ys-label:before {
+  /* background-position: -386px 0;*/
+    cursor:not-allowed;
+}
+
+
+/*ys-toolbar*/
+.ys-toolbar{
+    padding:20px;
+}
+.ys-toolbar label{margin-right:12px;margin-bottom:0;line-height: 32px;font-weight:normal;}
+.ys-toolbar>div+div{margin-left:10px;}
+
+
+.ys-content-title{
+    font-size:18px;
+    line-height: 32px;
+}
+
+/*文本加强类*/
+.ys-notice{
+    line-height: 32px;
+    color:#e64e4d;
+}
+.ys-notice-grey{
+    color:#999;
+}
+.text-right{
+
+}
+.text-center{
+
+}
+/*==========ys-input-status==========*/
+/*input status 采用［readonly，disabled］的状态形式定义样式 */
+.form-control[readonly],
+.form-control[disabled]{
+    background-color:#f8fafa;
+    color:#999;
+}
+.form-control[disabled]{
+    cursor:not-allowed;
+}
+.form-control[required]{
+    border-left:solid 2px #e64e4d;
+}
+
+.form-horizontal .form-group[class *="col-xs-"]{
+    margin-left:0;
+    margin-right:0;
+}
+
+/*==========ys-loading==========*/
+.ys-loading{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(33,33,33,0.52);
+    z-index: 2999;
+}
+
+.ys-loading .spin{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -33px;
+    width: 66px;
+    height: 66px;
+
+    background-image:url(../../images/common/ajax-loader.gif);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center center;
+}
+
+.ys-loading .fa-spin{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    font-size:36px;
+    text-align:center;
+    /*line-height: 0;*/
+    color:#fff;
+
+}
+
+
+
+/* bootstrap clearance */
+.container,.row{margin:0;padding:0;}
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+    padding:0;
+}
+
+
+/*
+   ======================================== form-horizontal
+    默认的字体颜色
+*/
+.form-horizontal .form-group{margin:0 0 15px 0;}
+.form-horizontal .form-group .control-label{padding-right:15px;}
+/* form-horizontal ======================================== */
+
+/*
+   ======================================== ys-font-color start
+    默认的字体颜色
+*/
+.ys-font-color-blue{color:#32aaff!important;}
+.ys-font-color-grey{color:#757575!important;}
+/* ys-font-color end ======================================== */
+
+
+
+/* ys-span-block end ======================================== */
+
+/*
+   ======================================== ys-span-block start
+    普通的文本作用块
+*/
+.ys-span-block{
+    display:inline-block;
+    height:32px;
+    line-height: 32px;
+}
+.ys-span-block em.label,label{display: inline-block;color:#7e8c9e;font-weight:normal;}
+.ys-span-block span{display: inline-block;color:#333;margin-left:6px;}
+.ys-span-block span+em.label,
+.ys-span-block span+label{
+    margin-left:10px;
+}
+
+/* ys-span-block end ======================================== */
+
+/*
+   ======================================== ys-input start
+    默认的输入框样式
+*/
+.ys-input{
+    height:32px;
+    border:1px solid #ccc;
+    padding:0 10px;
+}
+/* ys-input end ======================================== */
+
+/*
+   ======================================== ys-linkable start
+    默认的可点击样式
+*/
+.ys-linkable{
+    color:#32aaff;
+}
+.ys-linkable:active,
+.ys-linkable:focus,
+.ys-linkable:hover{
+    color: #32a3f6;
+    text-decoration: underline;
+    cursor:pointer;
+}
+/* ys-linkable end ======================================== */
+
+/*
+   ======================================== ys-input-required start
+    input必填
+*/
+.ys-input-required:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    background: url(../../images/common/icons.png) no-repeat -65px -58px;
+    z-index: 99;
+}
+/* ys-linkable end ======================================== */
+
+
+/*text-warn*/
+
+.text-danger{
+    color:#e64e4d!important;
+}
+
+/*ys-file-inline*/
+.ys-file-inline{
+    position: relative;
+    display: inline-block;
+    padding-left:24px;
+    line-height: 24px;
+    color:#333;
+    text-decoration: none;
+
+}
+.ys-file-inline:hover{color:#32aaff;}
+.ys-file-inline:before{
+    display:block;
+    position: absolute;
+    top:50%;
+    margin-top:-7px;
+    left:5px;
+    width:14px;
+    height:14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url(../../images/icons/icon_file.png);
+    content:" ";
+}
+.ys-file-inline .ys-icon-del-file{float:right;margin-left:6px;margin-top:2px;}
+
+.ys-file-inline .ys-icon-del-file:hover{background-color:#e4e4e4;}
+
+
+.form-control:focus {
+    border-color: transparent;
+    outline: solid 1px  #1faeff;
+    outline-offset:-1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: inherit !important;
+    background-image: inherit !important;
+    color: inherit !important;
+}
+
+
+/*patch for min.css*/
+.ys-platform-dialog .container{
+    border-radius: 6px;
+    overflow: hidden;
+}
+.alert-warning {
+    color: #333;
+    background-color: #fff;
+    border:0;
+}
+
+.ys-platform-dialog .container{
+
+}
+
+.ys-platform-dialog-msg .footer{
+    padding:15px;
+    height:64px;
+    line-height: 32px;
+   border-top: 1px solid #e5e5e5;
+}
+
+.ys-platform-dialog-msg .footer>div{
+    display: inline-block;
+    float: none;
+    padding: 0 15px;
+    min-width: 88px;
+    width:88px;
+    height: 32px;
+    line-height: 30px;
+    border-radius: 0;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+
+    background-color:#fff;
+    color:#32aaff;
+    border: solid 1px #32aaff;
+
+}
+
+.ys-platform-dialog-msg .footer>div+div{
+    margin-left:15px;
+
+    background-color:#32aaff;
+    color:#fff;
+    border-color:#32aaff;
+}
+
+.ys-platform-dialog-msg .footer>div:hover{
+    background-color:#fff;
+    color:#0f96ff;
+    border-color:#0f96ff;
+}
+
+.ys-platform-dialog-msg .footer>div+div:hover{
+    background-color:#0f96ff!important;
+    color:#fff;
+    border-color:#0f96ff;
+}
+
+/*patch by cheng 2018-06-08*/
+.ys-toolbar{}
+.ys-toolbar .ys-head-content{
+    margin:0!important;
+    line-height:32px;
+}
+
+
+
+
+
